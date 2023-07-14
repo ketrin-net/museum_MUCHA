@@ -1,0 +1,97 @@
+$main-font:'Playfair Display', serif;
+$secondary-font:  'Jost', sans-serif;
+$main-text-color: #363533;
+$secondary-text-color: #85817A;
+
+body {
+    background-color: #f7cdcd;
+    color: $main-text-color;
+    font-family: $main-font;
+}
+
+a {
+    text-decoration: none;
+    color: $main-text-color;
+}
+
+.general-page {
+    margin: auto;
+    padding-top: 24px;
+    width: 1440px;
+    height: 2852px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 0px 64px 24px 64px;
+    max-height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding-left: 79px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+
+    .second-link{
+        font-family: $secondary-font;
+        color: $secondary-text-color;
+    }
+}
+
+.lenguage {
+    display: flex;
+    align-items: center;
+    margin-right: 65px;
+    gap: 8px;
+    font-family: $secondary-font;
+    color: $secondary-text-color;
+}
+
+.btn.buy-tic {
+    font-family: $secondary-font;
+    position: relative;
+    z-index: 2000;
+
+    svg{
+        position: absolute;
+        top: 18%;
+        left: 88%;
+        z-index: 1;
+    }
+}
+
+.divider{
+    width: 1440px;
+    height: 1px;
+    background: #CBC4B8;
+    border: 1px;
+}
+
+h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+h4  {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+h5 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
