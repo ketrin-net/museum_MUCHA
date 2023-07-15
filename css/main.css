@@ -49,16 +49,26 @@ nav .second-link {
   color: #85817A;
 }
 
-.btn.buy-tic {
+.btn {
   font-family: "Jost", sans-serif;
   position: relative;
-  z-index: 2000;
 }
-.btn.buy-tic svg {
+.btn svg {
   position: absolute;
-  top: 18%;
-  left: 88%;
-  z-index: 1;
+  top: -35%;
+  left: 90%;
+}
+.btn.raed {
+  width: 174px;
+  height: 40px;
+}
+.btn.raed a {
+  color: #85817A;
+}
+.btn img {
+  position: absolute;
+  bottom: 14px;
+  right: -7px;
 }
 
 .divider {
@@ -68,11 +78,28 @@ nav .second-link {
   border: 1px;
 }
 
+h1 {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  margin: 0px;
+}
+
 h2 {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 52px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  margin: 0px;
 }
 
 h4 {
@@ -80,6 +107,7 @@ h4 {
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
+  margin: 0px;
 }
 
 h5 {
@@ -87,4 +115,49 @@ h5 {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+  margin: 0px;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.container {
+  width: auto;
+  margin-bottom: 72px;
+}
+.container.main {
+  width: 1440px;
+  height: 608px;
+  display: grid;
+  grid-template-columns: 980px 460px;
+  grid-template-rows: auto 1px;
+}
+.container.main .logo {
+  padding: 7.68px 8.65px 7.68px 10.57px;
+  position: relative;
+}
+.container.main .btn {
+  position: absolute;
+  bottom: 118.68px;
+  left: 614.57px;
+}
+.container.main .divider {
+  grid-column: span 2;
+}
+.container.about {
+  padding: 72px 64px;
+  display: flex;
+  gap: 32px;
+}
+.container.about p {
+  font-family: "Jost", sans-serif;
+  width: 640px;
+  height: 172px;
+  margin-top: 28px;
+  margin-bottom: 68px;
 }/*# sourceMappingURL=main.css.map */

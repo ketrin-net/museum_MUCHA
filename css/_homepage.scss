@@ -1,0 +1,46 @@
+$main-font: 'Playfair Display', serif;
+$secondary-font: 'Jost', sans-serif;
+$main-text-color: #363533;
+$secondary-text-color: #85817A;
+
+.container {
+    width: auto;
+    margin-bottom: 72px;
+
+    &.main {
+        width: 1440px;
+        height: 608px;
+        display: grid;
+        grid-template-columns: 980px 460px;
+        grid-template-rows: auto 1px;
+
+        .logo {
+            padding: 7.68px 8.65px 7.68px 10.57px;
+            position: relative;
+        }
+        
+        .btn {
+            position: absolute;
+            bottom: 118.68px;
+            left: 614.57px;
+        }
+        
+        .divider {
+            grid-column: span 2;
+        }
+    }
+
+    &.about {
+        padding: 72px 64px;
+        display: flex;
+        gap: 32px;
+
+        p {
+            font-family: $secondary-font;
+            width: 640px;
+            height: 172px;
+            margin-top: 28px;
+            margin-bottom: 68px;
+        }
+    }
+}
