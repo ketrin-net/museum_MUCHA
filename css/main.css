@@ -1,5 +1,5 @@
 body {
-  background-color: #f7cdcd;
+  background-color: #F5F5F5;
   color: #363533;
   font-family: "Playfair Display", serif;
 }
@@ -13,7 +13,6 @@ a {
   margin: auto;
   padding-top: 24px;
   width: 1440px;
-  height: 2852px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -36,7 +35,6 @@ nav {
   gap: 32px;
 }
 nav .second-link {
-  font-family: "Jost", sans-serif;
   color: #85817A;
 }
 
@@ -45,18 +43,20 @@ nav .second-link {
   align-items: center;
   margin-right: 65px;
   gap: 8px;
-  font-family: "Jost", sans-serif;
   color: #85817A;
 }
 
 .btn {
-  font-family: "Jost", sans-serif;
   position: relative;
+}
+.btn.buy {
+  width: 148px;
+  height: 32px;
 }
 .btn svg {
   position: absolute;
-  top: -35%;
-  left: 90%;
+  bottom: 12px;
+  right: -11px;
 }
 .btn.raed {
   width: 174px;
@@ -78,44 +78,124 @@ nav .second-link {
   border: 1px;
 }
 
+#map {
+  height: 540px;
+  margin-bottom: 72px;
+  position: relative;
+}
+#map .map-info {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+}
+#map .svg-map-icon {
+  position: absolute;
+  bottom: 222px;
+  right: 239px;
+}
+
+#contact {
+  width: 699px;
+  height: 404px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--icons-line, #CBC4B8);
+  position: absolute;
+  bottom: 44px;
+  right: 677px;
+}
+#contact .btn.buy {
+  position: absolute;
+  bottom: 96px;
+  left: 481px;
+}
+#contact .cont-info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45px;
+  left: 112px;
+}
+#contact .cont-info h4 {
+  color: #85817A;
+  margin-top: 20px;
+}
+#contact .cont-info h6 {
+  color: #85817A;
+  margin-top: 37px;
+}
+#contact .cont-info h5 {
+  color: #85817A;
+  margin-top: 12px;
+}
+
+footer {
+  background-color: #363533;
+  color: #FFFFFF;
+  padding: 40px 64px;
+  height: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+footer a {
+  color: #FFFFFF;
+}
+footer .second-link {
+  color: #FFFFFF;
+}
+
 h1 {
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 92px;
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
   line-height: 80px;
   margin: 0px;
+  font-family: "Playfair Display", serif;
 }
 
-h2 {
+h3 {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 52px;
   margin: 0px;
+  font-family: "Playfair Display", serif;
 }
 
-h3 {
+h4 {
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 44px;
   margin: 0px;
+  font-family: "Jost", sans-serif;
 }
 
-h4 {
+h5 {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
   margin: 0px;
+  font-family: "Jost", sans-serif;
 }
 
-h5 {
+h6 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
   margin: 0px;
+  font-family: "Jost", sans-serif;
 }
 
 p {
@@ -124,38 +204,58 @@ p {
   font-weight: 400;
   line-height: 24px;
   margin: 0px;
+  font-family: "Jost", sans-serif;
 }
 
-.container {
+.container-main-page {
   width: auto;
   margin-bottom: 72px;
 }
-.container.main {
+.container-main-page.main {
   width: 1440px;
   height: 608px;
   display: grid;
   grid-template-columns: 980px 460px;
   grid-template-rows: auto 1px;
 }
-.container.main .logo {
-  padding: 7.68px 8.65px 7.68px 10.57px;
+.container-main-page.main .logo {
+  width: 980px;
+  height: 607px;
   position: relative;
 }
-.container.main .btn {
+.container-main-page.main .title-1 {
   position: absolute;
-  bottom: 118.68px;
-  left: 614.57px;
+  bottom: 315px;
+  left: 176px;
 }
-.container.main .divider {
+.container-main-page.main .title-2 {
+  position: absolute;
+  bottom: 223px;
+  left: 599px;
+}
+.container-main-page.main .title-3 {
+  position: absolute;
+  bottom: 184px;
+  right: -22px;
+}
+.container-main-page.main h6 {
+  color: #BD6C2C;
+}
+.container-main-page.main .btn {
+  position: absolute;
+  bottom: 111px;
+  left: 604px;
+}
+.container-main-page.main .divider {
   grid-column: span 2;
 }
-.container.about {
+.container-main-page.about {
   padding: 72px 64px;
   display: flex;
   gap: 32px;
+  background-color: rgba(231, 224, 204, 0.3);
 }
-.container.about p {
-  font-family: "Jost", sans-serif;
+.container-main-page.about p {
   width: 640px;
   height: 172px;
   margin-top: 28px;

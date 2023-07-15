@@ -4,7 +4,7 @@ $main-text-color: #363533;
 $secondary-text-color: #85817A;
 
 body {
-    background-color: #f7cdcd;
+    background-color: #F5F5F5;
     color: $main-text-color;
     font-family: $main-font;
 }
@@ -18,7 +18,6 @@ a {
     margin: auto;
     padding-top: 24px;
     width: 1440px;
-    height: 2852px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -41,7 +40,6 @@ nav {
     gap: 32px;
 
     .second-link{
-        font-family: $secondary-font;
         color: $secondary-text-color;
     }
 }
@@ -51,18 +49,22 @@ nav {
     align-items: center;
     margin-right: 65px;
     gap: 8px;
-    font-family: $secondary-font;
     color: $secondary-text-color;
 }
 
 .btn {
-    font-family: $secondary-font;
     position: relative;
+
+    &.buy {
+        // вопрос с размером кнопки
+        width: 148px;
+        height: 32px;
+    }
 
     svg {
         position: absolute;
-        top: -35%;
-        left: 90%;
+        bottom: 12px;
+        right: -11px;
     }
 
     &.raed {
@@ -88,44 +90,134 @@ nav {
     border: 1px;
 }
 
+#map {
+    height: 540px;
+    margin-bottom: 72px;
+    position: relative;
+
+    .map-info {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+    }
+
+    .svg-map-icon {
+        position: absolute;
+        bottom: 222px;
+        right: 239px;
+    }
+
+}
+
+#contact {
+    width: 699px;
+    height: 404px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--icons-line, #CBC4B8);
+    position: absolute;
+    bottom: 44px;
+    right: 677px;
+
+    .btn.buy {
+        position: absolute;
+        bottom: 96px;
+        left: 481px;
+    }
+
+    .cont-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        left: 112px;
+
+        h4 {
+            color: $secondary-text-color;
+            margin-top: 20px;
+        }
+    
+        h6 {
+            color: $secondary-text-color;
+            margin-top: 37px;
+        }
+    
+        h5 {
+            color: $secondary-text-color;
+            margin-top: 12px;
+        }
+    }
+}
+
+footer {
+    background-color: $main-text-color;
+    color:#FFFFFF;
+    padding: 40px 64px;
+    height: 80px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+
+    a {
+        color: #FFFFFF;
+    }
+
+    .second-link{
+        color: #FFFFFF;
+    }
+}
+
 h1 {
+    font-size: 82px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 92px;
+    margin: 0px;
+    font-family: $main-font;
+}
+
+h2 {
     font-size: 72px;
     font-style: normal;
     font-weight: 700;
     line-height: 80px;
     margin: 0px;
+    font-family: $main-font;
 }
 
-h2 {
+h3 {
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 52px;
     margin: 0px;
+    font-family: $main-font;
 }
 
-h3 {
+h4 {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
     line-height: 44px;
     margin: 0px;
+    font-family: $secondary-font;
 }
 
-h4  {
+h5  {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
     margin: 0px;
+    font-family: $secondary-font;
 }
 
-h5 {
+h6 {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
     margin: 0px;
+    font-family: $secondary-font;
 }
 
 p {
@@ -134,4 +226,5 @@ p {
     font-weight: 400;
     line-height: 24px;
     margin: 0px;
+    font-family: $secondary-font;
 }
