@@ -1,0 +1,34 @@
+$color-orange: #BD6C2C;
+
+.product-card {
+    background-color: white;
+    padding: 24px;
+    height: 452px;
+    width: 256px;
+    border: 1px solid #CBC4B8;
+    z-index: 100;
+
+    .info {
+        height: 392px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .price {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .cost h5 {
+            color: $color-orange;
+        }
+    }
+
+    &.see-all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

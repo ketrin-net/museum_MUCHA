@@ -1,7 +1,8 @@
 body {
-  background-color: #F5F5F5;
+  background-color: #ffffff;
   color: #363533;
   font-family: "Playfair Display", serif;
+  z-index: 0;
 }
 
 a {
@@ -53,10 +54,9 @@ nav .second-link {
   width: 148px;
   height: 32px;
 }
-.btn svg {
-  position: absolute;
-  bottom: 12px;
-  right: -11px;
+.btn.buy-short {
+  width: 51.793px;
+  height: 32px;
 }
 .btn.raed {
   width: 174px;
@@ -65,10 +65,24 @@ nav .second-link {
 .btn.raed a {
   color: #85817A;
 }
-.btn img {
+.btn.raed img {
   position: absolute;
   bottom: 14px;
   right: -7px;
+}
+.btn.see {
+  width: 159px;
+  height: 40px;
+}
+.btn.see img {
+  position: absolute;
+  bottom: 14px;
+  right: 9px;
+}
+.btn svg {
+  position: absolute;
+  bottom: 12px;
+  right: -11px;
 }
 
 .divider {
@@ -253,11 +267,63 @@ p {
   padding: 72px 64px;
   display: flex;
   gap: 32px;
-  background-color: rgba(231, 224, 204, 0.3);
+  background-color: rgba(231, 223, 203, 0.3);
 }
 .container-main-page.about p {
   width: 640px;
   height: 172px;
   margin-top: 28px;
   margin-bottom: 68px;
+}
+.container-main-page.shop {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  padding: 0px 64px 28px 64px;
+  position: relative;
+}
+.container-main-page.shop .banner {
+  grid-column: span 4;
+  width: 491px;
+  height: 80px;
+  margin-bottom: 28px;
+}
+.container-main-page.shop .back-color {
+  background-color: rgba(231, 223, 203, 0.3);
+  width: 1440px;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 20;
+}
+
+.product-card {
+  background-color: white;
+  padding: 24px;
+  height: 452px;
+  width: 256px;
+  border: 1px solid #CBC4B8;
+  z-index: 100;
+}
+.product-card .info {
+  height: 392px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.product-card .price {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-card .price .cost h5 {
+  color: #BD6C2C;
+}
+.product-card.see-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

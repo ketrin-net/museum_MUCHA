@@ -2,11 +2,13 @@ $main-font:'Playfair Display', serif;
 $secondary-font:  'Jost', sans-serif;
 $main-text-color: #363533;
 $secondary-text-color: #85817A;
+$color-orange: #BD6C2C;
 
 body {
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     color: $main-text-color;
     font-family: $main-font;
+    z-index: 0;
 }
 
 a {
@@ -56,30 +58,47 @@ nav {
     position: relative;
 
     &.buy {
-        // вопрос с размером кнопки
+        // вопрос с размером кнопки height
         width: 148px;
         height: 32px;
     }
 
+    &.buy-short{
+        width: 51.793px;
+        height: 32px;
+    }
+
+    
+    &.raed {
+        width: 174px;
+        height: 40px;
+        
+        a {
+            color: $secondary-text-color;
+        }
+
+        img {
+            position: absolute;
+            bottom: 14px;
+            right: -7px;
+        }
+    }
+
+    &.see {
+        width: 159px;
+        height: 40px;
+
+        img {
+            position: absolute;
+            bottom: 14px;
+            right: 9px;
+        }
+    }
+    
     svg {
         position: absolute;
         bottom: 12px;
         right: -11px;
-    }
-
-    &.raed {
-        width: 174px;
-        height: 40px;
-
-        a {
-            color: $secondary-text-color;
-        }
-    }
-
-    img {
-        position: absolute;
-        bottom: 14px;
-        right: -7px;
     }
 }
 

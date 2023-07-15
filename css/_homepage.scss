@@ -2,6 +2,8 @@ $main-font: 'Playfair Display', serif;
 $secondary-font: 'Jost', sans-serif;
 $main-text-color: #363533;
 $secondary-text-color: #85817A;
+$color-orange: #BD6C2C;
+$back-fill-color: rgb(231, 223, 203, 0.3);
 
 .container-main-page {
     width: auto;
@@ -57,7 +59,7 @@ $secondary-text-color: #85817A;
         padding: 72px 64px;
         display: flex;
         gap: 32px;
-        background-color:  rgb(231, 224, 204, 0.3);
+        background-color: $back-fill-color;
 
         p {
             width: 640px;
@@ -67,5 +69,28 @@ $secondary-text-color: #85817A;
         }
     }
 
-    &.shop
+    &.shop {
+        display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto;
+            column-gap: 32px;
+        padding: 0px 64px 28px 64px;
+        position: relative;
+        
+        .banner{
+            grid-column: span 4;
+            width: 491px;
+            height: 80px;
+            margin-bottom: 28px;
+        }
+
+        .back-color{
+            background-color: $back-fill-color;
+            width: 1440px;
+            height: 200px;
+            position: absolute;
+            bottom: 0px;
+            z-index: 20;
+        }
+    }
 }
