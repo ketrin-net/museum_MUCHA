@@ -47,17 +47,11 @@ $color-orange: #BD6C2C;
     }
 }
 
-
 .info-ticket{
     display: grid;
     grid-template-columns: 64px 268px 336px 44px 180px 28px 28px 28px;
     justify-items: start;
     align-items: center;
-
-    .change-price{
-        justify-self: center;
-        color: $secondary-text-color;
-    }
 
     span {
         color: $secondary-text-color;
@@ -74,6 +68,10 @@ $color-orange: #BD6C2C;
     }
 }
 
+.change-price {
+    justify-self: center;
+    color: $secondary-text-color;
+}
 
 .total-buy{
     height: 60px;
@@ -88,10 +86,67 @@ $color-orange: #BD6C2C;
 
     .btn {
         justify-self: end;
-        margin-right: 11px;
     }    
 }
 
-#tour-form{
+#guided{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 
+    .form{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 416px);
+        grid-template-rows: repeat(5, 52px);
+        column-gap: 32px;
+        row-gap: 28px;
+    }
+
+    .title {
+        grid-column: span 3;
+    }
+
+    .full-name {
+        border-bottom: 1px solid #CBC4B8;
+    }
+
+    .people{
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 336px 28px 28px 28px;
+        justify-items: start;
+        align-items: center;
+    }
+
+    input {
+        font-family: $secondary-font;
+        color: $secondary-text-color;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        padding: 8px 20px;
+        border: none;
+    }
+
+    .datatime {
+        display: grid;
+        grid-template-columns: 52px auto;
+        border-bottom: 1px solid #CBC4B8;
+    }
+
+    .lengua {
+        display: grid;
+        grid-template-columns: auto 52px;
+        border-bottom: 1px solid #CBC4B8;
+    }
+
+    button{
+        padding: 14px;
+    }
+
+    .send {
+        align-self: flex-end;
+    }
 }

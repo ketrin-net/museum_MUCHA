@@ -56,12 +56,22 @@ nav .second-link {
   position: relative;
 }
 .btn.buy {
-  width: 148px;
+  width: 158px;
   height: 32px;
+}
+.btn.buy svg {
+  position: absolute;
+  bottom: 12px;
+  right: 0px;
 }
 .btn.buy-short {
   width: 51.793px;
   height: 32px;
+}
+.btn.buy-short svg {
+  position: absolute;
+  bottom: 12px;
+  right: 0px;
 }
 .btn.raed {
   width: 174px;
@@ -84,10 +94,14 @@ nav .second-link {
   bottom: 14px;
   right: 9px;
 }
-.btn svg {
+.btn.send {
+  width: 80px;
+  height: 30px;
+}
+.btn.send svg {
   position: absolute;
   bottom: 12px;
-  right: -11px;
+  right: 2px;
 }
 
 .divider {
@@ -377,10 +391,6 @@ p {
   justify-items: start;
   align-items: center;
 }
-.info-ticket .change-price {
-  justify-self: center;
-  color: #85817A;
-}
 .info-ticket span {
   color: #85817A;
 }
@@ -391,6 +401,11 @@ p {
   margin-top: 4px;
   padding-left: 336px;
   width: 336px;
+}
+
+.change-price {
+  justify-self: center;
+  color: #85817A;
 }
 
 .total-buy {
@@ -405,5 +420,58 @@ p {
 }
 .total-buy .btn {
   justify-self: end;
-  margin-right: 11px;
+}
+
+#guided {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+#guided .form {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 416px);
+  grid-template-rows: repeat(5, 52px);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 28px;
+}
+#guided .title {
+  grid-column: span 3;
+}
+#guided .full-name {
+  border-bottom: 1px solid #CBC4B8;
+}
+#guided .people {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 336px 28px 28px 28px;
+  justify-items: start;
+  align-items: center;
+}
+#guided input {
+  font-family: "Jost", sans-serif;
+  color: #85817A;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 8px 20px;
+  border: none;
+}
+#guided .datatime {
+  display: grid;
+  grid-template-columns: 52px auto;
+  border-bottom: 1px solid #CBC4B8;
+}
+#guided .lengua {
+  display: grid;
+  grid-template-columns: auto 52px;
+  border-bottom: 1px solid #CBC4B8;
+}
+#guided button {
+  padding: 14px;
+}
+#guided .send {
+  align-self: flex-end;
 }/*# sourceMappingURL=main.css.map */
