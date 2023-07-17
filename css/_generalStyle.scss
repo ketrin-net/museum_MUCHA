@@ -8,12 +8,12 @@ body {
     background-color: #ffffff;
     color: $main-text-color;
     font-family: $main-font;
-    z-index: 0;
 }
 
 a {
     text-decoration: none;
     color: $main-text-color;
+    position: relative;
 }
 
 button {
@@ -60,54 +60,51 @@ nav {
 }
 
 .btn {
-    position: relative;
+    span {
+        position: relative;
+    }
 
     &.buy {
-        // вопрос с размером кнопки height
         width: 158px;
-        height: 32px;
 
-        svg {
+        img {
             position: absolute;
-            bottom: 12px;
-            right: 0px;
+            bottom: 7px;
+            right: -17px;
         }
     }
 
     &.buy-short{
-        width: 51.793px;
-        height: 32px;
+        width: 65px;
 
-        svg {
+        img {
             position: absolute;
-            bottom: 12px;
-            right: 0px;
+            bottom: 8px;
+            left: 29px;
         }
     }
     
     &.raed {
-        width: 174px;
-        height: 40px;
-        
+        width: 184px;
+
         a {
             color: $secondary-text-color;
         }
 
         img {
             position: absolute;
-            bottom: 14px;
-            right: -7px;
+            bottom: 3px;
+            left: 123px;
         }
     }
 
     &.see {
-        width: 159px;
-        height: 40px;
+        width: 150px;
 
         img {
             position: absolute;
-            bottom: 14px;
-            right: 9px;
+            bottom: 3px;
+            left: 90px;
         }
     }
 
@@ -141,7 +138,7 @@ nav {
         right: 0px;
     }
 
-    .svg-map-icon {
+    .map-icon {
         position: absolute;
         bottom: 222px;
         right: 239px;
@@ -150,10 +147,8 @@ nav {
 }
 
 #contact {
-    width: 699px;
-    height: 404px;
     background-color: #FFFFFF;
-    border: 1px solid var(--icons-line, #CBC4B8);
+    border: 1px solid  #CBC4B8;
     position: absolute;
     bottom: 44px;
     right: 677px;
@@ -171,17 +166,17 @@ nav {
         top: 45px;
         left: 112px;
 
-        h4 {
+        .text-4 {
             color: $secondary-text-color;
             margin-top: 20px;
         }
     
-        h6 {
+        .text-6 {
             color: $secondary-text-color;
             margin-top: 37px;
         }
     
-        h5 {
+        .text-5 {
             color: $secondary-text-color;
             margin-top: 12px;
         }
@@ -193,7 +188,6 @@ footer {
     color:#FFFFFF;
     padding: 40px 64px;
     height: 80px;
-    flex-shrink: 0;
     display: flex;
     align-items: center;
 
@@ -206,6 +200,7 @@ footer {
     }
 }
 
+
 h1 {
     font-size: 82px;
     font-style: normal;
@@ -215,7 +210,7 @@ h1 {
     font-family: $main-font;
 }
 
-h2 {
+.text-2 {
     font-size: 72px;
     font-style: normal;
     font-weight: 700;
@@ -224,7 +219,7 @@ h2 {
     font-family: $main-font;
 }
 
-h3 {
+.text-3 {
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -233,7 +228,7 @@ h3 {
     font-family: $main-font;
 }
 
-h4 {
+.text-4 {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -242,7 +237,7 @@ h4 {
     font-family: $secondary-font;
 }
 
-h5  {
+.text-5  {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -251,7 +246,7 @@ h5  {
     font-family: $secondary-font;
 }
 
-h6 {
+.text-6 {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

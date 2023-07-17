@@ -2,12 +2,12 @@ body {
   background-color: #ffffff;
   color: #363533;
   font-family: "Playfair Display", serif;
-  z-index: 0;
 }
 
 a {
   text-decoration: none;
   color: #363533;
+  position: relative;
 }
 
 button {
@@ -52,47 +52,43 @@ nav .second-link {
   color: #85817A;
 }
 
-.btn {
+.btn span {
   position: relative;
 }
 .btn.buy {
   width: 158px;
-  height: 32px;
 }
-.btn.buy svg {
+.btn.buy img {
   position: absolute;
-  bottom: 12px;
-  right: 0px;
+  bottom: 7px;
+  right: -17px;
 }
 .btn.buy-short {
-  width: 51.793px;
-  height: 32px;
+  width: 65px;
 }
-.btn.buy-short svg {
+.btn.buy-short img {
   position: absolute;
-  bottom: 12px;
-  right: 0px;
+  bottom: 8px;
+  left: 29px;
 }
 .btn.raed {
-  width: 174px;
-  height: 40px;
+  width: 184px;
 }
 .btn.raed a {
   color: #85817A;
 }
 .btn.raed img {
   position: absolute;
-  bottom: 14px;
-  right: -7px;
+  bottom: 3px;
+  left: 123px;
 }
 .btn.see {
-  width: 159px;
-  height: 40px;
+  width: 150px;
 }
 .btn.see img {
   position: absolute;
-  bottom: 14px;
-  right: 9px;
+  bottom: 3px;
+  left: 90px;
 }
 .btn.send {
   width: 80px;
@@ -121,17 +117,15 @@ nav .second-link {
   top: 60px;
   right: 0px;
 }
-#map .svg-map-icon {
+#map .map-icon {
   position: absolute;
   bottom: 222px;
   right: 239px;
 }
 
 #contact {
-  width: 699px;
-  height: 404px;
   background-color: #FFFFFF;
-  border: 1px solid var(--icons-line, #CBC4B8);
+  border: 1px solid #CBC4B8;
   position: absolute;
   bottom: 44px;
   right: 677px;
@@ -148,15 +142,15 @@ nav .second-link {
   top: 45px;
   left: 112px;
 }
-#contact .cont-info h4 {
+#contact .cont-info .text-4 {
   color: #85817A;
   margin-top: 20px;
 }
-#contact .cont-info h6 {
+#contact .cont-info .text-6 {
   color: #85817A;
   margin-top: 37px;
 }
-#contact .cont-info h5 {
+#contact .cont-info .text-5 {
   color: #85817A;
   margin-top: 12px;
 }
@@ -166,7 +160,6 @@ footer {
   color: #FFFFFF;
   padding: 40px 64px;
   height: 80px;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
 }
@@ -186,7 +179,7 @@ h1 {
   font-family: "Playfair Display", serif;
 }
 
-h2 {
+.text-2 {
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
@@ -195,7 +188,7 @@ h2 {
   font-family: "Playfair Display", serif;
 }
 
-h3 {
+.text-3 {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -204,7 +197,7 @@ h3 {
   font-family: "Playfair Display", serif;
 }
 
-h4 {
+.text-4 {
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -213,7 +206,7 @@ h4 {
   font-family: "Jost", sans-serif;
 }
 
-h5 {
+.text-5 {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -222,7 +215,7 @@ h5 {
   font-family: "Jost", sans-serif;
 }
 
-h6 {
+.text-6 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -245,15 +238,9 @@ p {
   margin-bottom: 72px;
 }
 .container-main-page.main {
-  width: 1440px;
-  height: 608px;
   display: grid;
   grid-template-columns: 980px 460px;
   grid-template-rows: auto 1px;
-}
-.container-main-page.main .logo {
-  width: 980px;
-  height: 607px;
   position: relative;
 }
 .container-main-page.main .title-1 {
@@ -269,14 +256,12 @@ p {
 .container-main-page.main .title-3 {
   position: absolute;
   bottom: 184px;
-  right: -22px;
-}
-.container-main-page.main h6 {
+  left: 750px;
   color: #BD6C2C;
 }
 .container-main-page.main .btn {
   position: absolute;
-  bottom: 111px;
+  bottom: 115px;
   left: 604px;
 }
 .container-main-page.main .divider {
@@ -289,8 +274,6 @@ p {
   background-color: rgba(231, 224, 204, 0.3);
 }
 .container-main-page.about p {
-  width: 640px;
-  height: 172px;
   margin-top: 28px;
   margin-bottom: 68px;
 }
@@ -303,6 +286,9 @@ p {
   padding: 0px 64px 28px 64px;
   position: relative;
 }
+.container-main-page.shop .cost {
+  color: #BD6C2C;
+}
 .container-main-page.shop .banner {
   grid-column: span 4;
   width: 491px;
@@ -310,12 +296,11 @@ p {
   margin-bottom: 28px;
 }
 .container-main-page.shop .back-color {
+  position: absolute;
   background-color: rgba(231, 224, 204, 0.3);
   width: 1440px;
   height: 200px;
-  position: absolute;
   bottom: 0px;
-  z-index: 20;
 }
 
 .product-card {
