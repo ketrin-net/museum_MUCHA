@@ -32,15 +32,13 @@ $color-orange: #BD6C2C;
     }
     
     .image-info{
-        width: 304px;
-        height: 592px;
         margin-left: 32px;
         margin-bottom: 100px;
         background-color: $main-text-color;
         display: flex;
         flex-direction: column;
 
-        h5 {
+        p {
             padding: 24px;
             color: white;
         }
@@ -74,13 +72,13 @@ $color-orange: #BD6C2C;
 }
 
 .total-buy{
-    height: 60px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 592px 80px 92px auto;
     justify-items: start;
     align-items: center;
 
-    span {
+    p {
         color: $secondary-text-color;
     }
 
@@ -131,6 +129,7 @@ $color-orange: #BD6C2C;
     }
 
     .datatime {
+        margin-bottom: 2px;
         display: grid;
         grid-template-columns: 52px auto;
         border-bottom: 1px solid #CBC4B8;
@@ -147,6 +146,7 @@ $color-orange: #BD6C2C;
     }
 
     .send {
+        margin-top: 5px;
         align-self: flex-end;
     }
 }

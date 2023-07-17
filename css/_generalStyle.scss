@@ -19,6 +19,7 @@ a {
 button {
     border: none;
     padding: 0px;
+    background-color: white;
 }
 
 .general-page {
@@ -109,13 +110,12 @@ nav {
     }
 
     &.send {
-        width: 80px;
-        height: 30px;
+        width: 82px;
 
-        svg {
+        img {
             position: absolute;
-            bottom: 12px;
-            right: 2px;
+            bottom: 8px;
+            left: 50px;
         }
     }
 }
