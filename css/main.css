@@ -10,11 +10,15 @@ a {
   color: #363533;
 }
 
+button {
+  border: none;
+}
+
 .general-page {
   margin: auto;
   padding-top: 24px;
   width: 1440px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
@@ -267,7 +271,7 @@ p {
   padding: 72px 64px;
   display: flex;
   gap: 32px;
-  background-color: rgba(231, 223, 203, 0.3);
+  background-color: rgba(231, 224, 204, 0.3);
 }
 .container-main-page.about p {
   width: 640px;
@@ -291,7 +295,7 @@ p {
   margin-bottom: 28px;
 }
 .container-main-page.shop .back-color {
-  background-color: rgba(231, 223, 203, 0.3);
+  background-color: rgba(231, 224, 204, 0.3);
   width: 1440px;
   height: 200px;
   position: absolute;
@@ -326,4 +330,51 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.content-purchase {
+  width: auto;
+  margin: 74px 64px 72px 64px;
+}
+
+#price-list {
+  height: 811px;
+  display: grid;
+  grid-template-columns: 952px 357px;
+  grid-template-rows: 119px 692px;
+}
+#price-list .titel {
+  grid-column: span 2;
+}
+#price-list .line {
+  height: 1px;
+  background: #CBC4B8;
+  border: 1px;
+}
+#price-list .image-info {
+  width: 304px;
+  height: 592px;
+  margin-left: 32px;
+  margin-bottom: 100px;
+  background-color: #363533;
+  display: flex;
+  flex-direction: column;
+}
+#price-list .image-info h5 {
+  padding: 24px;
+  color: white;
+}
+
+.cost-table table {
+  width: 100%;
+  border: none;
+}
+.cost-table td {
+  padding: 20px;
+  border-bottom: 1px solid #CBC4B8;
+}
+
+.info-ticket {
+  background-color: aquamarine;
+  height: 52px;
 }/*# sourceMappingURL=main.css.map */

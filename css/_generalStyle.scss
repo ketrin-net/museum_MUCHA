@@ -16,11 +16,15 @@ a {
     color: $main-text-color;
 }
 
+button {
+    border: none;
+}
+
 .general-page {
     margin: auto;
     padding-top: 24px;
     width: 1440px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
 }

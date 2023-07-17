@@ -1,0 +1,76 @@
+$main-font: 'Playfair Display', serif;
+$secondary-font: 'Jost', sans-serif;
+$main-text-color: #363533;
+$secondary-text-color: #85817A;
+$color-orange: #BD6C2C;
+
+.content-purchase{
+    width: auto;
+    margin: 74px 64px 72px 64px;
+}
+
+#price-list {
+    height: 811px;
+    display: grid;
+    grid-template-columns: 952px 357px;
+    grid-template-rows: 119px 692px;
+
+    .titel {
+        grid-column: span 2;
+    }
+
+    // .cost {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    .line{
+        height: 1px;
+        background: #CBC4B8;
+        border: 1px;
+    }
+    
+    .image-info{
+        width: 304px;
+        height: 592px;
+        margin-left: 32px;
+        margin-bottom: 100px;
+        background-color: $main-text-color;
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            padding: 24px;
+            color: white;
+        }
+    }
+}
+
+.cost-table{
+
+    table {
+        width: 100%;
+        border: none;
+    }
+
+    td {
+        padding: 20px;
+        border-bottom: 1px solid #CBC4B8;
+    }
+}
+
+
+
+.info-ticket{
+    background-color: aquamarine;
+    height: 52px;
+    
+}
+
+.total-buy{
+
+}
+
+#tour-form{
+
+}
