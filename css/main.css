@@ -12,6 +12,7 @@ a {
 
 button {
   border: none;
+  padding: 0px;
 }
 
 .general-page {
@@ -340,11 +341,16 @@ p {
 #price-list {
   height: 811px;
   display: grid;
-  grid-template-columns: 952px 357px;
+  grid-template-columns: 976px 336px;
   grid-template-rows: 119px 692px;
 }
 #price-list .titel {
   grid-column: span 2;
+}
+#price-list .cost {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 #price-list .line {
   height: 1px;
@@ -365,16 +371,39 @@ p {
   color: white;
 }
 
-.cost-table table {
-  width: 100%;
-  border: none;
+.info-ticket {
+  display: grid;
+  grid-template-columns: 64px 268px 336px 44px 180px 28px 28px 28px;
+  justify-items: start;
+  align-items: center;
 }
-.cost-table td {
-  padding: 20px;
-  border-bottom: 1px solid #CBC4B8;
+.info-ticket .change-price {
+  justify-self: center;
+  color: #85817A;
+}
+.info-ticket span {
+  color: #85817A;
+}
+.info-ticket img {
+  padding: 14px;
+}
+.info-ticket .info-family {
+  margin-top: 4px;
+  padding-left: 336px;
+  width: 336px;
 }
 
-.info-ticket {
-  background-color: aquamarine;
-  height: 52px;
+.total-buy {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 592px 80px 92px auto;
+  justify-items: start;
+  align-items: center;
+}
+.total-buy span {
+  color: #85817A;
+}
+.total-buy .btn {
+  justify-self: end;
+  margin-right: 11px;
 }/*# sourceMappingURL=main.css.map */

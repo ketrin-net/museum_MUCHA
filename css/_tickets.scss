@@ -12,17 +12,18 @@ $color-orange: #BD6C2C;
 #price-list {
     height: 811px;
     display: grid;
-    grid-template-columns: 952px 357px;
+    grid-template-columns: 976px 336px;
     grid-template-rows: 119px 692px;
 
     .titel {
         grid-column: span 2;
     }
 
-    // .cost {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    .cost {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .line{
         height: 1px;
@@ -46,29 +47,49 @@ $color-orange: #BD6C2C;
     }
 }
 
-.cost-table{
-
-    table {
-        width: 100%;
-        border: none;
-    }
-
-    td {
-        padding: 20px;
-        border-bottom: 1px solid #CBC4B8;
-    }
-}
-
-
 
 .info-ticket{
-    background-color: aquamarine;
-    height: 52px;
+    display: grid;
+    grid-template-columns: 64px 268px 336px 44px 180px 28px 28px 28px;
+    justify-items: start;
+    align-items: center;
+
+    .change-price{
+        justify-self: center;
+        color: $secondary-text-color;
+    }
+
+    span {
+        color: $secondary-text-color;
+    }
+
+    img{
+        padding: 14px;
+    }
     
+    .info-family {
+        margin-top: 4px;
+        padding-left: 336px;
+        width: 336px;
+    }
 }
 
-.total-buy{
 
+.total-buy{
+    height: 60px;
+    display: grid;
+    grid-template-columns: 592px 80px 92px auto;
+    justify-items: start;
+    align-items: center;
+
+    span {
+        color: $secondary-text-color;
+    }
+
+    .btn {
+        justify-self: end;
+        margin-right: 11px;
+    }    
 }
 
 #tour-form{
