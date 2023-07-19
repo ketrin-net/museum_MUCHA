@@ -492,21 +492,22 @@ p {
 
 .bio-in-years {
   margin: 0px 64px 74px 64px;
+  display: grid;
 }
 .bio-in-years .list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.bio-in-years .start {
+.bio-in-years .first-block {
   display: grid;
   grid-template-columns: 336px auto;
   grid-template-rows: 80px auto;
 }
-.bio-in-years .start .title {
+.bio-in-years .first-block .title {
   grid-column: span 2;
 }
-.bio-in-years .start img {
+.bio-in-years .first-block img {
   margin-top: 14px;
 }
 .bio-in-years .line {
@@ -514,12 +515,32 @@ p {
   background: #CBC4B8;
   border: 1px;
 }
+.bio-in-years .line.short {
+  width: 640px;
+}
+.bio-in-years .second-block {
+  display: grid;
+  grid-template-columns: auto 336px;
+  grid-template-rows: auto;
+}
+.bio-in-years .second-block .photo {
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bio-in-years .second-block .list {
+  margin-top: 27px;
+}
 
 .years-info {
-  height: 60px;
+  min-height: 60px;
   padding-right: 112px;
   display: flex;
   flex-direction: row;
   gap: 32px;
   align-items: center;
+}
+.years-info span {
+  align-self: flex-start;
 }/*# sourceMappingURL=main.css.map */
