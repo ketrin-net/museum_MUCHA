@@ -459,4 +459,67 @@ p {
 #guided .send {
   margin-top: 5px;
   align-self: flex-end;
+}
+
+.about-author {
+  position: relative;
+  margin: 0px 64px 70px 64px;
+  padding-top: 72px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.about-author img {
+  position: relative;
+}
+.about-author .ratio {
+  position: absolute;
+  top: 0px;
+  left: -64px;
+}
+.about-author .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about-author .text p {
+  margin-top: 50px;
+}
+.about-author .text span {
+  color: #BD6C2C;
+}
+
+.bio-in-years {
+  margin: 0px 64px 74px 64px;
+}
+.bio-in-years .list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bio-in-years .start {
+  display: grid;
+  grid-template-columns: 336px auto;
+  grid-template-rows: 80px auto;
+}
+.bio-in-years .start .title {
+  grid-column: span 2;
+}
+.bio-in-years .start img {
+  margin-top: 14px;
+}
+.bio-in-years .line {
+  height: 1px;
+  background: #CBC4B8;
+  border: 1px;
+}
+
+.years-info {
+  height: 60px;
+  padding-right: 112px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

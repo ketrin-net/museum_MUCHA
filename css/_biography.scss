@@ -1,0 +1,78 @@
+$main-font: 'Playfair Display', serif;
+$secondary-font: 'Jost', sans-serif;
+$main-text-color: #363533;
+$secondary-text-color: #85817A;
+$color-orange: #BD6C2C;
+
+.about-author{
+    position: relative;
+    margin: 0px 64px 70px 64px;
+    padding-top: 72px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    
+    img{
+        position: relative;
+    }
+
+    .ratio{
+        position: absolute;
+        top: 0px;
+        left: -64px;
+    }
+
+    .text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        p {
+            margin-top: 50px;
+        }
+
+        span {
+            color: $color-orange;
+        }
+    } 
+}
+
+.bio-in-years{
+    margin: 0px 64px 74px 64px;
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .start {
+        display:grid;
+        grid-template-columns: 336px auto;
+        grid-template-rows: 80px auto;
+
+        .title{
+            grid-column: span 2;
+        }
+
+        img {
+            margin-top: 14px;
+        }
+    }
+
+    .line {
+        height: 1px;
+        background: #CBC4B8;
+        border: 1px;
+    }
+}
+
+.years-info {
+    height: 60px;
+    padding-right: 112px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+}
