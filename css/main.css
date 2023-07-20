@@ -101,7 +101,7 @@ nav .second-link {
 }
 
 .divider {
-  width: 1440px;
+  width: 100%;
   height: 1px;
   background: #CBC4B8;
   border: 1px;
@@ -238,6 +238,7 @@ p {
   margin-bottom: 72px;
 }
 .container-main-page.main {
+  margin-bottom: 0%;
   display: grid;
   grid-template-columns: 980px 460px;
   grid-template-rows: auto 1px;
@@ -268,6 +269,7 @@ p {
   grid-column: span 2;
 }
 .container-main-page.about {
+  margin-top: 73px;
   padding: 72px 64px;
   display: flex;
   gap: 32px;
@@ -543,4 +545,74 @@ p {
 }
 .years-info span {
   align-self: flex-start;
+}
+
+.section {
+  margin: 0px 64px 72px 64px;
+}
+.section .description {
+  position: relative;
+  align-self: center;
+}
+.section.title {
+  position: relative;
+  margin-top: 8px;
+  display: flex;
+  gap: 32px;
+}
+.section.title h1 {
+  margin-bottom: 28px;
+}
+.section.title .ratio {
+  position: absolute;
+  top: -8px;
+  left: -64px;
+}
+.section.title img {
+  position: relative;
+}
+.section.about-page-content {
+  position: relative;
+  display: flex;
+  gap: 132px;
+  margin-bottom: 67px;
+}
+.section.about-page-content p {
+  position: relative;
+  color: #E7E0CC;
+}
+.section.about-page-content span {
+  color: white;
+}
+.section.about-page-content .background-fill {
+  width: 1441px;
+  height: 384px;
+  position: absolute;
+  top: -72px;
+  left: -64px;
+  background-color: #363533;
+}
+.section.number1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.decorative-panels {
+  display: flex;
+  margin-top: 60px;
+}
+.decorative-panels.the-four-arts {
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+.decorative-panels.the-four-times-of-the-day {
+  justify-content: flex-start;
+}
+.decorative-panels.the-four-flowers {
+  justify-content: flex-end;
+}
+.decorative-panels .text-3 {
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  color: #85817A;
 }/*# sourceMappingURL=main.css.map */
