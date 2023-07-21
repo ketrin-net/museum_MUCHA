@@ -1,6 +1,7 @@
 @import '_setting';
 
 .section {
+    position: relative;
     margin: 0px 64px 72px 64px;
 
     .description {
@@ -17,10 +18,14 @@
 
     .text-4 {
         position: relative;
+        margin-bottom: 28px;
+    }
+
+    .poster {
+        position: relative;
     }
 
     &.title {
-        position: relative;
         margin-top: 8px;
         display: flex;
         gap: 32px;
@@ -41,7 +46,6 @@
     }
 
     &.about-page-content {
-        position: relative;
         display: flex;
         gap: 132px;
         margin-bottom: 64px;
@@ -65,8 +69,7 @@
         }
     }
 
-    &.number1 {
-        position: relative;
+    &.number-1 {
         margin-top: 3px;
         padding-top: 69px;
         display: flex;
@@ -91,26 +94,20 @@
         }
 
         p {
-            margin-top: 28px;
             max-width: 640px;
         }
     }
 
-    &.number2 {
-        position: relative;
+    &.number-2 {
+        margin-bottom: 0px;
         padding-top: 72px;
         display: grid;
         grid-template-columns: 15% auto 32%;
         grid-template-rows: auto auto;
         column-gap: 32px;
-        row-gap: 28px;
 
         span {
             grid-column: span 3;
-        }
-
-        .poster{
-            position: relative;
         }
 
         .back-color {
@@ -142,6 +139,97 @@
             position: absolute;
             top: 236px;
             left: 0px;
+        }
+    }
+
+    &.number-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .info {
+            padding-top: 72px;
+        }
+
+        p {
+            padding-top: 28px;
+            max-width: 640px;
+        }
+        
+        .btn {
+            align-self: flex-end;
+            margin-bottom: 150px;
+        }
+
+        .ratio {
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+        }
+    }
+
+    &.number-4 {
+        display: grid;
+        column-gap: 32px;
+        row-gap: 28px;
+        grid-template-areas: 
+            "title title title"
+            "info info info"
+            "Hyacinth Lottery Moravian"
+            "Hyacinth info-2 Moravian";
+
+        .title {
+            grid-area: title;
+        }
+
+        .info {
+            padding-left: 112px;
+            grid-area: info;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+
+            .additional {
+                max-width: 528px;
+            }
+        }
+        .hyacinth {
+            grid-area: Hyacinth;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+        .lottery {
+            grid-area: Lottery;
+            justify-self: center;
+            align-self: center;
+            position: relative;
+        }
+        .moravian {
+            grid-area: Moravian;
+            justify-self: end;
+            position: relative;
+        }
+        .info-2 {
+            grid-area: info-2;
+            position: relative;
+            color: $golden-text-color;
+            align-self: center;
+        }
+
+        .background-fill {
+            position: absolute;
+            bottom: -72px;
+            left: -64px;
+            width: 1440px;
+            height: 420px;
+            background-color: $main-text-color;
+        }
+
+        .ratio {
+            position: absolute;
+            bottom: -72px;
+            right: 218px;
         }
     }
 }

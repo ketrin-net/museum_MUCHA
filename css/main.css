@@ -548,6 +548,7 @@ p {
 }
 
 .section {
+  position: relative;
   margin: 0px 64px 72px 64px;
 }
 .section .description {
@@ -562,9 +563,12 @@ p {
 }
 .section .text-4 {
   position: relative;
+  margin-bottom: 28px;
+}
+.section .poster {
+  position: relative;
 }
 .section.title {
-  position: relative;
   margin-top: 8px;
   display: flex;
   gap: 32px;
@@ -581,7 +585,6 @@ p {
   position: relative;
 }
 .section.about-page-content {
-  position: relative;
   display: flex;
   gap: 132px;
   margin-bottom: 64px;
@@ -601,49 +604,43 @@ p {
   left: -64px;
   background-color: #363533;
 }
-.section.number1 {
-  position: relative;
+.section.number-1 {
   margin-top: 3px;
   padding-top: 69px;
   display: flex;
   flex-direction: column;
 }
-.section.number1 .ratio-title {
+.section.number-1 .ratio-title {
   position: absolute;
   left: 0px;
   top: 0px;
 }
-.section.number1 .info {
+.section.number-1 .info {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section.number1 .info .btn {
+.section.number-1 .info .btn {
   margin-left: 289px;
   margin-top: 152px;
 }
-.section.number1 p {
-  margin-top: 28px;
+.section.number-1 p {
   max-width: 640px;
 }
-.section.number2 {
-  position: relative;
+.section.number-2 {
+  margin-bottom: 0px;
   padding-top: 72px;
   display: grid;
   grid-template-columns: 15% auto 32%;
   grid-template-rows: auto auto;
   -moz-column-gap: 32px;
        column-gap: 32px;
-  row-gap: 28px;
 }
-.section.number2 span {
+.section.number-2 span {
   grid-column: span 3;
 }
-.section.number2 .poster {
-  position: relative;
-}
-.section.number2 .back-color {
+.section.number-2 .back-color {
   position: absolute;
   background-color: rgba(231, 224, 204, 0.3);
   width: 1440px;
@@ -651,22 +648,99 @@ p {
   top: 0px;
   left: -64px;
 }
-.section.number2 .description {
+.section.number-2 .description {
   display: flex;
   align-self: flex-start;
 }
-.section.number2 .description.one {
+.section.number-2 .description.one {
   flex-direction: row;
   gap: 4px;
 }
-.section.number2 .description.two {
+.section.number-2 .description.two {
   flex-direction: column;
   gap: 24px;
 }
-.section.number2 .btn {
+.section.number-2 .btn {
   position: absolute;
   top: 236px;
   left: 0px;
+}
+.section.number-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section.number-3 .info {
+  padding-top: 72px;
+}
+.section.number-3 p {
+  padding-top: 28px;
+  max-width: 640px;
+}
+.section.number-3 .btn {
+  align-self: flex-end;
+  margin-bottom: 150px;
+}
+.section.number-3 .ratio {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+.section.number-4 {
+  display: grid;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 28px;
+  grid-template-areas: "title title title" "info info info" "Hyacinth Lottery Moravian" "Hyacinth info-2 Moravian";
+}
+.section.number-4 .title {
+  grid-area: title;
+}
+.section.number-4 .info {
+  padding-left: 112px;
+  grid-area: info;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.section.number-4 .info .additional {
+  max-width: 528px;
+}
+.section.number-4 .hyacinth {
+  grid-area: Hyacinth;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.section.number-4 .lottery {
+  grid-area: Lottery;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+}
+.section.number-4 .moravian {
+  grid-area: Moravian;
+  justify-self: end;
+  position: relative;
+}
+.section.number-4 .info-2 {
+  grid-area: info-2;
+  position: relative;
+  color: #E7E0CC;
+  align-self: center;
+}
+.section.number-4 .background-fill {
+  position: absolute;
+  bottom: -72px;
+  left: -64px;
+  width: 1440px;
+  height: 420px;
+  background-color: #363533;
+}
+.section.number-4 .ratio {
+  position: absolute;
+  bottom: -72px;
+  right: 218px;
 }
 
 .decorative-panels {
