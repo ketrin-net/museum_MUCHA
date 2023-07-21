@@ -727,7 +727,9 @@ p {
   grid-area: info-2;
   position: relative;
   color: #E7E0CC;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .section.number-4 .background-fill {
   position: absolute;
@@ -741,6 +743,9 @@ p {
   position: absolute;
   bottom: -72px;
   right: 218px;
+}
+.section.number-4 .btn {
+  margin-top: 35px;
 }
 
 .decorative-panels {
