@@ -593,15 +593,36 @@ p {
   background-color: #363533;
 }
 .section.number1 {
+  position: relative;
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
-.section.number1 text-6 {
+.section.number1 .ratio-title {
+  position: absolute;
+  left: 0px;
+  top: -69px;
+}
+.section.number1 .info {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section.number1 .info .btn {
+  margin-left: 289px;
+  margin-top: 152px;
+}
+.section.number1 p {
+  margin-top: 28px;
   max-width: 640px;
+}
+.section.number1 .text-4 {
+  position: relative;
 }
 
 .decorative-panels {
+  position: relative;
   display: flex;
   margin-top: 60px;
 }
@@ -612,10 +633,24 @@ p {
 .decorative-panels.the-four-times-of-the-day {
   justify-content: flex-start;
 }
+.decorative-panels.the-four-times-of-the-day .ratio {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.decorative-panels.the-four-times-of-the-day .btn {
+  padding-left: 33px;
+  padding-top: 511px;
+}
 .decorative-panels.the-four-flowers {
   justify-content: flex-end;
 }
+.decorative-panels.the-four-flowers .btn {
+  align-self: flex-end;
+  margin-right: 50px;
+}
 .decorative-panels .text-3 {
+  position: relative;
   writing-mode: vertical-rl;
   transform: scale(-1);
   color: #85817A;

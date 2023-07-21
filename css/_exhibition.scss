@@ -55,19 +55,42 @@
     }
 
     &.number1 {
+        position: relative;
+        margin-top: 72px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
 
-        text-6 {
+        .ratio-title {
+            position: absolute;
+            left: 0px;
+            top: -69px;
+        }
+
+        .info {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .btn {
+                margin-left: 289px;
+                margin-top: 152px;
+            }
+        }
+
+        p {
+            margin-top: 28px;
             max-width: 640px;
         }
 
-        
+        .text-4 {
+            position: relative;
+        }
     }
 }
 
 .decorative-panels {
+    position: relative;
     display: flex;
     margin-top: 60px;
     
@@ -78,17 +101,32 @@
 
     &.the-four-times-of-the-day{
         justify-content: flex-start;
+
+        .ratio {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .btn {
+            padding-left: 33px;
+            padding-top: 511px;
+        }
     }
 
     &.the-four-flowers {
         justify-content: flex-end;
+
+        .btn {
+            align-self: flex-end;
+            margin-right: 50px;        
+        }
     }
 
     .text-3 {
+        position: relative;
         writing-mode: vertical-rl;
         transform: scale(-1);
         color: $secondary-text-color;
     }
-
-
 }
