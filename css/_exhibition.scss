@@ -8,6 +8,17 @@
         align-self: center;
     }
 
+    .text-3.inverted {
+        position: relative;
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+        color: $secondary-text-color;
+    }
+
+    .text-4 {
+        position: relative;
+    }
+
     &.title {
         position: relative;
         margin-top: 8px;
@@ -33,7 +44,7 @@
         position: relative;
         display: flex;
         gap: 132px;
-        margin-bottom: 67px;
+        margin-bottom: 64px;
 
         p {
             position: relative;
@@ -48,7 +59,7 @@
             width: 1441px;
             height: 384px;
             position: absolute;
-            top: -72px;
+            top: -77px;
             left: -64px;
             background-color: $main-text-color;
         }
@@ -56,14 +67,15 @@
 
     &.number1 {
         position: relative;
-        margin-top: 72px;
+        margin-top: 3px;
+        padding-top: 69px;
         display: flex;
         flex-direction: column;
 
         .ratio-title {
             position: absolute;
             left: 0px;
-            top: -69px;
+            top: 0px;
         }
 
         .info {
@@ -82,9 +94,54 @@
             margin-top: 28px;
             max-width: 640px;
         }
+    }
 
-        .text-4 {
+    &.number2 {
+        position: relative;
+        padding-top: 72px;
+        display: grid;
+        grid-template-columns: 15% auto 32%;
+        grid-template-rows: auto auto;
+        column-gap: 32px;
+        row-gap: 28px;
+
+        span {
+            grid-column: span 3;
+        }
+
+        .poster{
             position: relative;
+        }
+
+        .back-color {
+            position: absolute;
+            background-color: $back-fill-color;
+            width: 1440px;
+            height: 488px;
+            top: 0px;
+            left: -64px;
+        }
+
+        .description {
+            display: flex;
+            align-self: flex-start;
+
+            &.one {
+                flex-direction: row;
+                gap: 4px;
+            }
+            
+            &.two {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+        }
+
+        .btn {
+            position: absolute;
+            top: 236px;
+            left: 0px;
         }
     }
 }
@@ -121,12 +178,5 @@
             align-self: flex-end;
             margin-right: 50px;        
         }
-    }
-
-    .text-3 {
-        position: relative;
-        writing-mode: vertical-rl;
-        transform: scale(-1);
-        color: $secondary-text-color;
     }
 }
