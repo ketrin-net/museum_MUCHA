@@ -1,9 +1,4 @@
-$main-font: 'Playfair Display', serif;
-$secondary-font: 'Jost', sans-serif;
-$main-text-color: #363533;
-$secondary-text-color: #85817A;
-$golden-text-color: #E7E0CC;
-$color-orange: #BD6C2C;
+@import '_setting';
 
 .section {
     margin: 0px 64px 72px 64px;

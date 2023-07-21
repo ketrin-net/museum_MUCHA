@@ -1,9 +1,4 @@
-$main-font: 'Playfair Display', serif;
-$secondary-font: 'Jost', sans-serif;
-$main-text-color: #363533;
-$secondary-text-color: #85817A;
-$color-orange: #BD6C2C;
-$back-fill-color: rgba(231, 224, 204, 0.3);
+@import '_setting';
 
 .container-main-page {
     width: auto;

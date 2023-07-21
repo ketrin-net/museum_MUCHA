@@ -1,8 +1,4 @@
-$main-font: 'Playfair Display', serif;
-$secondary-font: 'Jost', sans-serif;
-$main-text-color: #363533;
-$secondary-text-color: #85817A;
-$color-orange: #BD6C2C;
+@import '_setting';
 
 .content-purchase{
     width: auto;
