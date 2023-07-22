@@ -16,9 +16,11 @@
         color: $secondary-text-color;
     }
 
-    .text-4 {
+    .heading {
         position: relative;
         margin-bottom: 28px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     .poster {
@@ -88,8 +90,9 @@
             justify-content: space-between;
 
             .btn {
+                align-self: flex-end;
                 margin-left: 289px;
-                margin-top: 152px;
+                margin-bottom: 47px;
             }
         }
 
@@ -106,7 +109,7 @@
         grid-template-rows: auto auto;
         column-gap: 32px;
 
-        span {
+        .heading {
             grid-column: span 3;
         }
 
@@ -158,7 +161,7 @@
         
         .btn {
             align-self: flex-end;
-            margin-bottom: 150px;
+            margin-bottom: 146px;
         }
 
         .ratio {
@@ -180,6 +183,7 @@
 
         .title {
             grid-area: title;
+            margin-bottom: 0px;
         }
 
         .info {
@@ -238,6 +242,96 @@
             margin-top: 35px;
         }
     }
+
+    &.number-5 {
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+
+    &.number-6 {
+        .info {
+            position: relative;
+            display: flex;
+            gap: 32px;
+        }
+
+        p {
+            max-width: 528px;
+            padding-top: 116px;
+        }
+
+        .btn {
+            align-self: flex-end;
+            margin-bottom: 202px;
+            margin-left: 121px;
+        }
+
+        .background-fill {
+            position: absolute;
+            top: 144px;
+            left: -64px;
+            width: 1440px;
+            height: 312px;
+            background-color: $back-fill-color;
+        }
+        
+        .ratio {
+            position: absolute;
+            top: 144px;
+            right: 0px;
+        }
+    }
+
+    &.number-7 {
+        display: grid;
+        grid-template-columns: auto 532px;
+        column-gap: 80px;
+        grid-template-areas: 
+            "h h"
+            "a b"
+            "c b";
+        
+        .heading {
+            grid-area: h;
+        }
+
+        p {
+            grid-area: a;
+            max-width: 640px;
+        }
+
+        .poster {
+            position: relative;
+            grid-area: b;
+            justify-self: end;
+        }
+
+        .btn {
+            grid-area: c;
+            position: absolute;
+            bottom: 248px;
+            left: 530px;
+        }
+
+        .ratio {
+            position: absolute;
+            top: 88px;
+            right: 4px;
+        }
+    }
 }
 
 .decorative-panels {
@@ -247,7 +341,7 @@
     
     &.the-four-arts {
         justify-content: flex-end;
-        margin-top: 28px;
+        margin-top: 16px;
     }
 
     &.the-four-times-of-the-day{

@@ -73,6 +73,7 @@ nav .second-link {
   left: 29px;
 }
 .btn.raed {
+  padding: 4px 0px 4px 0px;
   width: 184px;
 }
 .btn.raed a {
@@ -262,7 +263,7 @@ p {
 }
 .container-main-page.main .btn {
   position: absolute;
-  bottom: 115px;
+  bottom: 111px;
   left: 604px;
 }
 .container-main-page.main .divider {
@@ -561,9 +562,11 @@ p {
   transform: scale(-1);
   color: #85817A;
 }
-.section .text-4 {
+.section .heading {
   position: relative;
   margin-bottom: 28px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .section .poster {
   position: relative;
@@ -622,8 +625,9 @@ p {
   justify-content: space-between;
 }
 .section.number-1 .info .btn {
+  align-self: flex-end;
   margin-left: 289px;
-  margin-top: 152px;
+  margin-bottom: 47px;
 }
 .section.number-1 p {
   max-width: 640px;
@@ -637,7 +641,7 @@ p {
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
-.section.number-2 span {
+.section.number-2 .heading {
   grid-column: span 3;
 }
 .section.number-2 .back-color {
@@ -679,7 +683,7 @@ p {
 }
 .section.number-3 .btn {
   align-self: flex-end;
-  margin-bottom: 150px;
+  margin-bottom: 146px;
 }
 .section.number-3 .ratio {
   position: absolute;
@@ -695,6 +699,7 @@ p {
 }
 .section.number-4 .title {
   grid-area: title;
+  margin-bottom: 0px;
 }
 .section.number-4 .info {
   padding-left: 112px;
@@ -747,6 +752,78 @@ p {
 .section.number-4 .btn {
   margin-top: 35px;
 }
+.section.number-5 {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+}
+.section.number-5 .info {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.section.number-5 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section.number-6 .info {
+  position: relative;
+  display: flex;
+  gap: 32px;
+}
+.section.number-6 p {
+  max-width: 528px;
+  padding-top: 116px;
+}
+.section.number-6 .btn {
+  align-self: flex-end;
+  margin-bottom: 202px;
+  margin-left: 121px;
+}
+.section.number-6 .background-fill {
+  position: absolute;
+  top: 144px;
+  left: -64px;
+  width: 1440px;
+  height: 312px;
+  background-color: rgba(231, 224, 204, 0.3);
+}
+.section.number-6 .ratio {
+  position: absolute;
+  top: 144px;
+  right: 0px;
+}
+.section.number-7 {
+  display: grid;
+  grid-template-columns: auto 532px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  grid-template-areas: "h h" "a b" "c b";
+}
+.section.number-7 .heading {
+  grid-area: h;
+}
+.section.number-7 p {
+  grid-area: a;
+  max-width: 640px;
+}
+.section.number-7 .poster {
+  position: relative;
+  grid-area: b;
+  justify-self: end;
+}
+.section.number-7 .btn {
+  grid-area: c;
+  position: absolute;
+  bottom: 248px;
+  left: 530px;
+}
+.section.number-7 .ratio {
+  position: absolute;
+  top: 88px;
+  right: 4px;
+}
 
 .decorative-panels {
   position: relative;
@@ -755,7 +832,7 @@ p {
 }
 .decorative-panels.the-four-arts {
   justify-content: flex-end;
-  margin-top: 28px;
+  margin-top: 16px;
 }
 .decorative-panels.the-four-times-of-the-day {
   justify-content: flex-start;
