@@ -6,7 +6,6 @@
 }
 
 #price-list {
-    height: 811px;
     display: grid;
     grid-template-columns: 976px 336px;
     grid-template-rows: 119px 692px;
@@ -24,7 +23,6 @@
     .line{
         height: 1px;
         background: #CBC4B8;
-        border: 1px;
     }
     
     .image-info{
@@ -58,7 +56,7 @@
     .info-family {
         margin-top: 4px;
         padding-left: 336px;
-        width: 336px;
+        max-width: 336px;
     }
 }
 
@@ -144,5 +142,100 @@
     .send {
         margin-top: 5px;
         align-self: flex-end;
+    }
+}
+
+@media (min-width: 851px) {
+
+}
+
+@media (max-width: 850px) {
+    .content-purchase {
+        width: auto;
+        margin: 50px 16px 60px 16px;
+    }
+
+    #price-list {
+        display: flex;
+        flex-direction: column;
+
+        .titel {
+            margin-bottom: 20px;
+        }
+
+        .cost {
+            gap: 10px;
+        }
+
+        .line {
+            height: 1px;
+            background: #CBC4B8;
+        }
+
+        .image-info {
+            display: none;
+        }
+    }
+
+    .info-ticket{
+        grid-template-columns: 35px 85px 85px 20px auto 20px 16px 20px;
+
+        img{
+            padding: 7px;
+            width: 16px;
+            height: 16px;
+        }
+        
+        .info-family {
+            padding-left: 115px;
+            min-width: 128px;
+        }
+    }
+
+    .total-buy{
+        margin-top: 30px;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    #guided{
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        .form{
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .people{
+            grid-template-columns: auto 28px 28px 28px;
+        }
+
+        input {
+            font-size: 14px;
+        }
+
+        .datatime {
+            grid-template-columns: 34px auto;
+
+            input {
+                padding-left: 0px;
+            }
+        }
+
+        .lengua {
+            grid-template-columns: auto 34px;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        button{
+            padding: 7px;
+        }
     }
 }

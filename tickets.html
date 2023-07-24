@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="general-page">
-        <header>
+        <header class="desktop-only">
             <a href="index.html"><span class="text-3">MUCHA</span></a>
             <nav>
                 <a href="exhibition.html" class="second-link"><span class="text-6">EXHIBITION</span></a>
@@ -32,6 +32,23 @@
                 </a>
             </div>
         </header>
+        <header class="mobile-only">
+            <a href="index.html"><span class="text-3">MUCHA</span></a>
+            <nav class="top">
+                <a href="exhibition.html" class="second-link"><span class="text-6">EXHIBITION</span></a>
+                <a href="biography.html" class="second-link"><span class="text-6">BIOGRAPHY</span></a>
+                <a href="#" class="second-link"><span class="text-6">E-SHOP</span></a>
+                <a href="#" class="second-link"><span class="text-6">CONTACTS</span></a>
+                <div class="btn buy">
+                    <a href="tickets.html">
+                        <img src="./img/ellipse/Ellipse_for_buy_tickets.svg">
+                        <span class="text-5">BUY TICKETS</span>
+                    </a>
+                </div>
+            </nav>
+            <button class="menu-btn mobile-only"><img src="./img/icon/menu_header_mobile.svg"></button>
+        </header>
+
         <div class="divider"></div>
         <div class="content-purchase">
             <div id="price-list">
@@ -163,6 +180,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="container-main-page shop">
             <div class="banner">
                 <span class="text-2">MUCHA SHOP</span>
@@ -231,11 +249,12 @@
             </div>
             <div class="back-color"></div>
         </div>
-        <div id="map">
-            <div class="divider"></div>
+
+        <div id="map" class="desktop-only">
+            <div class="divider "></div>
             <div class="map-info">
                 <img src="./img/icon/icon_map.svg" class="map-icon">
-                <img src="./img/Map.png" width="928" height="480">
+                <img src="./img/Map.png">
             </div>
             <div id="contact">
                 <img src="./img/ratio/golden_ratio_for_map.svg">
@@ -253,9 +272,28 @@
                 </div>
             </div>
         </div>
+        <div id="map-mobile" class="mobile-only">
+            <div class="map-info">
+                <img src="./img/icon/icon_map.svg" class="map-icon">
+                <img src="./img/Map_for_mobile.png">
+            </div>
+            <div class="contact">
+                <img src="./img/ratio/golden_ratio_for_map-mobile.svg" class="ratio">
+                <span class="text-3">Mucha Museum Kaunický palác</span>
+                <span class="text-4">Panská 7 <br> 110 00 Prague 1</span>
+                <span class="text-6">Opening hours:</span>
+                <span class="text-5">daily 10:00 am - 6:00 pm</span>
+                <div class="btn buy">
+                    <a href="tickets.html">
+                        <img src="./img/ellipse/Ellipse_for_buy_tickets.svg">
+                        <span class="text-5">BUY TICKETS</span>
+                    </a>
+                </div>
+            </div>
+        </div>
         <footer>
             <a href="index.html"><span class="text-3">MUCHA</span></a>
-            <nav>
+            <nav class="bot">
                 <a href="exhibition.html" class="second-link"><span class="text-6">EXHIBITION</span></a>
                 <a href="biography.html" class="second-link"><span class="text-6">BIOGRAPHY</span></a>
                 <a href="#" class="second-link"><span class="text-6">E-SHOP</span></a>

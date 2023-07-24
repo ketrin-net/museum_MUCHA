@@ -181,7 +181,6 @@ footer .second-link {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
   }
   header {
     padding: 8px 16px;
@@ -193,6 +192,22 @@ footer .second-link {
   header .menu-btn {
     padding: 8px;
     color: #85817A;
+  }
+  header .text-2 {
+    font-size: 72px;
+    line-height: 52px;
+  }
+  header .text-3 {
+    font-size: 40px;
+  }
+  header .text-4 {
+    font-size: 32px;
+  }
+  header .text-5 {
+    font-size: 24px;
+  }
+  header .text-6 {
+    font-size: 20px;
   }
   nav.top {
     padding: 20px 0px 20px 0px;
@@ -269,6 +284,22 @@ footer .second-link {
   #map-mobile .contact .btn span {
     color: #363533;
   }
+  #map-mobile .text-2 {
+    font-size: 72px;
+    line-height: 52px;
+  }
+  #map-mobile .text-3 {
+    font-size: 40px;
+  }
+  #map-mobile .text-4 {
+    font-size: 32px;
+  }
+  #map-mobile .text-5 {
+    font-size: 24px;
+  }
+  #map-mobile .text-6 {
+    font-size: 20px;
+  }
   footer {
     padding: 28px 16px 40px 16px;
     display: flex;
@@ -282,6 +313,15 @@ footer .second-link {
   }
   footer .second-link {
     color: #FFFFFF;
+  }
+  footer .text-3 {
+    font-size: 40px;
+  }
+  footer .text-6 {
+    font-size: 20px;
+  }
+  .btn .text-5 {
+    font-size: 24px;
   }
 }
 .container-main-page {
@@ -444,7 +484,6 @@ footer .second-link {
 }
 
 #price-list {
-  height: 811px;
   display: grid;
   grid-template-columns: 976px 336px;
   grid-template-rows: 119px 692px;
@@ -460,7 +499,6 @@ footer .second-link {
 #price-list .line {
   height: 1px;
   background: #CBC4B8;
-  border: 1px;
 }
 #price-list .image-info {
   margin-left: 32px;
@@ -489,7 +527,7 @@ footer .second-link {
 .info-ticket .info-family {
   margin-top: 4px;
   padding-left: 336px;
-  width: 336px;
+  max-width: 336px;
 }
 
 .change-price {
@@ -567,6 +605,78 @@ footer .second-link {
   align-self: flex-end;
 }
 
+@media (max-width: 850px) {
+  .content-purchase {
+    width: auto;
+    margin: 50px 16px 60px 16px;
+  }
+  #price-list {
+    display: flex;
+    flex-direction: column;
+  }
+  #price-list .titel {
+    margin-bottom: 20px;
+  }
+  #price-list .cost {
+    gap: 10px;
+  }
+  #price-list .line {
+    height: 1px;
+    background: #CBC4B8;
+  }
+  #price-list .image-info {
+    display: none;
+  }
+  .info-ticket {
+    grid-template-columns: 35px 85px 85px 20px auto 20px 16px 20px;
+  }
+  .info-ticket img {
+    padding: 7px;
+    width: 16px;
+    height: 16px;
+  }
+  .info-ticket .info-family {
+    padding-left: 115px;
+    min-width: 128px;
+  }
+  .total-buy {
+    margin-top: 30px;
+    grid-template-columns: auto auto auto auto;
+  }
+  #guided {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  #guided .form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #guided .people {
+    grid-template-columns: auto 28px 28px 28px;
+  }
+  #guided input {
+    font-size: 14px;
+  }
+  #guided .datatime {
+    grid-template-columns: 34px auto;
+  }
+  #guided .datatime input {
+    padding-left: 0px;
+  }
+  #guided .lengua {
+    grid-template-columns: auto 34px;
+  }
+  #guided img {
+    width: 20px;
+    height: 20px;
+  }
+  #guided button {
+    padding: 7px;
+  }
+}
 .about-author {
   position: relative;
   margin: 0px 64px 70px 64px;
@@ -1018,4 +1128,23 @@ p {
   line-height: 24px;
   margin: 0px;
   font-family: "Jost", sans-serif;
+}
+
+@media (max-width: 850px) {
+  .text-2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .text-3 {
+    font-size: 22px;
+  }
+  .text-4 {
+    font-size: 18px;
+  }
+  .text-5 {
+    font-size: 14px;
+  }
+  .text-6 {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
