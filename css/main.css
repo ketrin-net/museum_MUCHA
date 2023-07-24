@@ -181,6 +181,7 @@ footer .second-link {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
   }
   header {
     padding: 8px 16px;
@@ -527,7 +528,7 @@ footer .second-link {
 .info-ticket .info-family {
   margin-top: 4px;
   padding-left: 336px;
-  max-width: 336px;
+  min-width: 336px;
 }
 
 .change-price {
