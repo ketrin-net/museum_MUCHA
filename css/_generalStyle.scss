@@ -9,7 +9,7 @@ a {
 button {
     border: none;
     padding: 0px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0);
 }
 
 .general-page {
@@ -221,18 +221,21 @@ footer {
         justify-content: space-between;
 
         .menu-btn {
+            z-index: 100;
             padding: 8px;
             color: $secondary-text-color;
         }
     }
 
     nav.top {
+        z-index: 90;
+        margin-top: 69px;
         padding: 20px 0px 20px 0px;
         position: absolute;
-        z-index: 100;
         right: 0px;
-        top: 76px; 
+        top: 0px; 
         flex-direction: column;
+        gap: 15px;
         width: 60%;
         transition: all .4s ease;
         transform: translateX(100%);
@@ -246,6 +249,12 @@ footer {
 
         .second-link {
             color: $secondary-text-color;
+        }
+
+        .divider {
+            width: 40%;
+            height: 1px;
+            background: #85817A;
         }
     }
 
@@ -339,5 +348,12 @@ footer {
         .second-link {
             color: #FFFFFF;
         }
+    }
+}
+
+@media (orientation: landscape) {
+    
+    nav.top {
+        margin-top: 0px;
     }
 }

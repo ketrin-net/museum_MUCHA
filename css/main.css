@@ -7,7 +7,7 @@ a {
 button {
   border: none;
   padding: 0px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .general-page {
@@ -192,16 +192,19 @@ footer .second-link {
     justify-content: space-between;
   }
   header .menu-btn {
+    z-index: 100;
     padding: 8px;
     color: #85817A;
   }
   nav.top {
+    z-index: 90;
+    margin-top: 69px;
     padding: 20px 0px 20px 0px;
     position: absolute;
-    z-index: 100;
     right: 0px;
-    top: 76px;
+    top: 0px;
     flex-direction: column;
+    gap: 15px;
     width: 60%;
     transition: all 0.4s ease;
     transform: translateX(100%);
@@ -214,6 +217,11 @@ footer .second-link {
   }
   nav.top .second-link {
     color: #85817A;
+  }
+  nav.top .divider {
+    width: 40%;
+    height: 1px;
+    background: #85817A;
   }
   nav.bot {
     margin-top: 20px;
@@ -290,6 +298,11 @@ footer .second-link {
   }
   footer .second-link {
     color: #FFFFFF;
+  }
+}
+@media (orientation: landscape) {
+  nav.top {
+    margin-top: 0px;
   }
 }
 .container-main-page {
