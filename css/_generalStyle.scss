@@ -224,27 +224,6 @@ footer {
             padding: 8px;
             color: $secondary-text-color;
         }
-
-        .text-2 {
-            font-size: 72px;
-            line-height: 52px
-        }
-
-        .text-3 {
-            font-size: 40px;
-        }
-
-        .text-4 {
-            font-size: 32px;
-        }
-
-        .text-5 {
-            font-size: 24px;
-        }
-
-        .text-6 {
-            font-size: 20px;
-        }
     }
 
     nav.top {
@@ -292,6 +271,7 @@ footer {
 
         .map-info {
             position: relative;
+            
             .map-icon {
                 position: absolute;
                 top: 165px;
@@ -342,27 +322,6 @@ footer {
                 }
             }
         }
-
-        .text-2 {
-            font-size: 72px;
-            line-height: 52px
-        }
-
-        .text-3 {
-            font-size: 40px;
-        }
-
-        .text-4 {
-            font-size: 32px;
-        }
-
-        .text-5 {
-            font-size: 24px;
-        }
-
-        .text-6 {
-            font-size: 20px;
-        }
 }
 
     footer {
@@ -379,20 +338,6 @@ footer {
 
         .second-link {
             color: #FFFFFF;
-        }
-
-        .text-3 {
-            font-size: 40px;
-        }
-
-        .text-6 {
-            font-size: 20px;
-        }
-    }
-
-    .btn {
-        .text-5 {
-            font-size: 24px;
         }
     }
 }

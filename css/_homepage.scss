@@ -8,7 +8,7 @@
     &.main {
         margin-bottom: 0%;
         display: grid;
-        grid-template-columns: 980px 460px;
+        grid-template-columns: 980px auto;
         grid-template-rows: auto 1px;
 
         .title-1 {
@@ -44,14 +44,21 @@
         gap: 32px;
         background-color: $back-fill-color;
 
-        p {
-            margin-top: 28px;
-            margin-bottom: 68px;
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .poster {
+            max-width: 640px;
+            max-height: 388px;
         }
     }
 
     &.shop {
         position: relative;
+        padding: 0px 64px;
         display: flex;
         flex-direction: column;
 
@@ -68,7 +75,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
             gap: 32px;
-            padding: 0px 64px 28px 64px;
+            padding-bottom: 28px;
         }
 
         .back-color{
@@ -77,6 +84,7 @@
             width: 100%;
             height: 200px;
             bottom: 0px;
+            left: 0px;
         }
     }
 }
@@ -88,19 +96,41 @@
     .container-main-page {
         margin-bottom: 60px;
 
+        .text-2 {
+            font-size: 40px;
+            line-height: 52px;
+        }
+
         &.main {
-            margin: auto;
-            padding: 40px 0px 60px 13px;
-            width: 255px;
+            background-image: url("../img/ratio/ratio_index_title.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 40px 0px 60px 13px;
             display: flex;
             flex-direction: column;
+
+            .info {
+                padding-left: 5px;
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+            }
 
             .title-1 {
                 position: relative;
                 bottom: 0px;
                 left: 0px;
+            }
+
+            .title-2 {
+                position: relative;
+                bottom: 0px;
+                left: 0px;
+                align-self: flex-end;
+            }
+
+            h1 {
                 font-size: 40px;
-                font-style: normal;
                 font-weight: 700;
                 line-height: 52px;
             }
@@ -135,11 +165,6 @@
                 flex-direction: column;
             }
 
-            .text-2 {
-                font-size: 40px;
-                line-height: 52px;
-            }
-
             p {
                 margin-top: 16px;
                 margin-bottom: 0px;
@@ -147,6 +172,16 @@
 
             .btn {
                 align-self: end;
+            }
+        }
+
+        &.shop {
+            align-items: center;
+            padding: 28px 16px 60px 19px;
+
+            .banner {
+                margin-bottom: 16px;
+                align-self: flex-start;
             }
         }
     }

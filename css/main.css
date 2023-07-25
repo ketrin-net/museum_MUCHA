@@ -195,22 +195,6 @@ footer .second-link {
     padding: 8px;
     color: #85817A;
   }
-  header .text-2 {
-    font-size: 72px;
-    line-height: 52px;
-  }
-  header .text-3 {
-    font-size: 40px;
-  }
-  header .text-4 {
-    font-size: 32px;
-  }
-  header .text-5 {
-    font-size: 24px;
-  }
-  header .text-6 {
-    font-size: 20px;
-  }
   nav.top {
     padding: 20px 0px 20px 0px;
     position: absolute;
@@ -293,22 +277,6 @@ footer .second-link {
   #map-mobile .contact .btn span {
     color: #363533;
   }
-  #map-mobile .text-2 {
-    font-size: 72px;
-    line-height: 52px;
-  }
-  #map-mobile .text-3 {
-    font-size: 40px;
-  }
-  #map-mobile .text-4 {
-    font-size: 32px;
-  }
-  #map-mobile .text-5 {
-    font-size: 24px;
-  }
-  #map-mobile .text-6 {
-    font-size: 20px;
-  }
   footer {
     padding: 28px 16px 40px 16px;
     display: flex;
@@ -323,15 +291,6 @@ footer .second-link {
   footer .second-link {
     color: #FFFFFF;
   }
-  footer .text-3 {
-    font-size: 40px;
-  }
-  footer .text-6 {
-    font-size: 20px;
-  }
-  .btn .text-5 {
-    font-size: 24px;
-  }
 }
 .container-main-page {
   width: auto;
@@ -341,7 +300,7 @@ footer .second-link {
 .container-main-page.main {
   margin-bottom: 0%;
   display: grid;
-  grid-template-columns: 980px 460px;
+  grid-template-columns: 980px auto;
   grid-template-rows: auto 1px;
 }
 .container-main-page.main .title-1 {
@@ -372,12 +331,18 @@ footer .second-link {
   gap: 32px;
   background-color: rgba(231, 224, 204, 0.3);
 }
-.container-main-page.about p {
-  margin-top: 28px;
-  margin-bottom: 68px;
+.container-main-page.about .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-main-page.about .poster {
+  max-width: 640px;
+  max-height: 388px;
 }
 .container-main-page.shop {
   position: relative;
+  padding: 0px 64px;
   display: flex;
   flex-direction: column;
 }
@@ -392,7 +357,7 @@ footer .second-link {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
   gap: 32px;
-  padding: 0px 64px 28px 64px;
+  padding-bottom: 28px;
 }
 .container-main-page.shop .back-color {
   position: absolute;
@@ -400,16 +365,28 @@ footer .second-link {
   width: 100%;
   height: 200px;
   bottom: 0px;
+  left: 0px;
 }
 
 @media (max-width: 850px) {
   .container-main-page {
     margin-bottom: 60px;
   }
+  .container-main-page .text-2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
   .container-main-page.main {
-    margin: auto;
-    padding: 40px 0px 60px 13px;
-    width: 255px;
+    background-image: url("../img/ratio/ratio_index_title.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 40px 0px 60px 13px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-main-page.main .info {
+    padding-left: 5px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
   }
@@ -417,8 +394,15 @@ footer .second-link {
     position: relative;
     bottom: 0px;
     left: 0px;
+  }
+  .container-main-page.main .title-2 {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    align-self: flex-end;
+  }
+  .container-main-page.main h1 {
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 52px;
   }
@@ -447,16 +431,20 @@ footer .second-link {
     display: flex;
     flex-direction: column;
   }
-  .container-main-page.about .text-2 {
-    font-size: 40px;
-    line-height: 52px;
-  }
   .container-main-page.about p {
     margin-top: 16px;
     margin-bottom: 0px;
   }
   .container-main-page.about .btn {
     align-self: end;
+  }
+  .container-main-page.shop {
+    align-items: center;
+    padding: 28px 16px 60px 19px;
+  }
+  .container-main-page.shop .banner {
+    margin-bottom: 16px;
+    align-self: flex-start;
   }
 }
 .product-card {
@@ -497,11 +485,12 @@ footer .second-link {
 
 #price-list {
   display: grid;
-  grid-template-columns: 976px 336px;
-  grid-template-rows: 119px 692px;
+  grid-template-columns: auto 25%;
+  grid-template-rows: auto 692px;
 }
 #price-list .titel {
   grid-column: span 2;
+  margin-bottom: 38px;
 }
 #price-list .cost {
   display: flex;
@@ -526,7 +515,7 @@ footer .second-link {
 
 .info-ticket {
   display: grid;
-  grid-template-columns: 64px 268px 336px 44px 180px 28px 28px 28px;
+  grid-template-columns: 64px 268px 332px 44px auto 28px 28px 28px;
   justify-items: start;
   align-items: center;
 }
@@ -550,7 +539,7 @@ footer .second-link {
 .total-buy {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 592px 80px 92px auto;
+  grid-template-columns: auto 80px 92px 255px;
   justify-items: start;
   align-items: center;
 }
@@ -628,6 +617,8 @@ footer .second-link {
   }
   #price-list .titel {
     margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 52px;
   }
   #price-list .cost {
     gap: 10px;
@@ -642,6 +633,19 @@ footer .second-link {
   .info-ticket {
     grid-template-columns: 35px 85px 85px 20px auto 20px 16px 20px;
   }
+  .info-ticket .text-2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .info-ticket .text-4 {
+    font-size: 18px;
+  }
+  .info-ticket .text-5 {
+    font-size: 14px;
+  }
+  .info-ticket .text-6 {
+    font-size: 12px;
+  }
   .info-ticket img {
     padding: 7px;
     width: 16px;
@@ -655,10 +659,19 @@ footer .second-link {
     margin-top: 30px;
     grid-template-columns: auto auto auto auto;
   }
+  .total-buy p {
+    font-size: 14px;
+  }
   #guided {
     display: flex;
     flex-direction: column;
     gap: 28px;
+  }
+  #guided .text-3 {
+    font-size: 22px;
+  }
+  #guided .text-6 {
+    font-size: 12px;
   }
   #guided .form {
     margin-top: 60px;
@@ -668,6 +681,9 @@ footer .second-link {
   }
   #guided .people {
     grid-template-columns: auto 28px 28px 28px;
+  }
+  #guided .people .change-price {
+    font-size: 14px;
   }
   #guided input {
     font-size: 14px;

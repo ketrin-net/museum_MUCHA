@@ -7,11 +7,12 @@
 
 #price-list {
     display: grid;
-    grid-template-columns: 976px 336px;
-    grid-template-rows: 119px 692px;
+    grid-template-columns: auto 25%;
+    grid-template-rows: auto 692px;
 
     .titel {
         grid-column: span 2;
+        margin-bottom: 38px;
     }
 
     .cost {
@@ -41,7 +42,7 @@
 
 .info-ticket{
     display: grid;
-    grid-template-columns: 64px 268px 336px 44px 180px 28px 28px 28px;
+    grid-template-columns: 64px 268px 332px 44px auto 28px 28px 28px;
     justify-items: start;
     align-items: center;
 
@@ -68,7 +69,7 @@
 .total-buy{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 592px 80px 92px auto;
+    grid-template-columns: auto 80px 92px 255px;
     justify-items: start;
     align-items: center;
 
@@ -161,6 +162,8 @@
 
         .titel {
             margin-bottom: 20px;
+            font-size: 40px;
+            line-height: 52px;
         }
 
         .cost {
@@ -180,6 +183,23 @@
     .info-ticket{
         grid-template-columns: 35px 85px 85px 20px auto 20px 16px 20px;
 
+        .text-2 {
+            font-size: 40px;
+            line-height: 52px
+        }
+    
+        .text-4 {
+            font-size: 18px;
+        }
+    
+        .text-5 {
+            font-size: 14px;
+        }
+    
+        .text-6 {
+            font-size: 12px;
+        }
+
         img{
             padding: 7px;
             width: 16px;
@@ -195,12 +215,24 @@
     .total-buy{
         margin-top: 30px;
         grid-template-columns: auto auto auto auto;
+
+        p {
+            font-size: 14px;
+        }
     }
 
     #guided{
         display: flex;
         flex-direction: column;
         gap: 28px;
+        
+        .text-3 {
+            font-size: 22px;
+        }
+    
+        .text-6 {
+            font-size: 12px;
+        }
 
         .form{
             margin-top: 60px;
@@ -208,9 +240,13 @@
             flex-direction: column;
             gap: 10px;
         }
-
+        
         .people{
             grid-template-columns: auto 28px 28px 28px;
+
+            .change-price {
+                font-size: 14px;
+            }
         }
 
         input {
