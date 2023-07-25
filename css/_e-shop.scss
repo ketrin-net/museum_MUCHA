@@ -1,22 +1,24 @@
 @import '_setting';
 
 .product-card {
+    max-width: 304px;
+    min-height: 500px;
+    position: relative;
     background-color: white;
     padding: 24px;
-    height: 452px;
-    width: 256px;
     border: 1px solid #CBC4B8;
-    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .info {
-        height: 392px;
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
 
     .price {
-        height: 60px;
+        margin-top: 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;

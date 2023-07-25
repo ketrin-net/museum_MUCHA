@@ -17,7 +17,7 @@ button {
     font-family: $main-font;
     margin: auto;
     padding-top: 24px;
-    width: 1440px;
+    max-width: 1440px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,9 @@ nav {
     }
 
     &.buy-short{
+        padding: 12px 0px;
         width: 65px;
+        // height: 60px;
 
         img {
             position: absolute;
@@ -79,7 +81,7 @@ nav {
     }
     
     &.raed {
-        padding: 4px 0px 4px 0px;
+        padding: 4px 0px;
         width: 184px;
 
         a {
@@ -145,7 +147,7 @@ nav {
     border: 1px solid  #CBC4B8;
     position: absolute;
     bottom: 44px;
-    right: 677px;
+    left: 64px;
 
     .btn.buy {
         position: absolute;
@@ -199,7 +201,6 @@ footer {
         display: none !important;
     }
 }
-
 @media (max-width: 850px) {
     .desktop-only {
         display: none !important;
@@ -282,19 +283,25 @@ footer {
         }
     }
 
-
     #map-mobile {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         margin-bottom: 60px;
         position: relative;
 
-        .map-icon {
-            position: absolute;
-            top: 165px;
-            right: 70px;
+        .map-info {
+            position: relative;
+            .map-icon {
+                position: absolute;
+                top: 165px;
+                left: 250px;
+            }
         }
 
         .contact {        
             position: relative;
+            max-width: 343px;
             margin: 25px 8px 0px 8px;
             display: flex;
             flex-direction: column;

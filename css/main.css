@@ -15,7 +15,7 @@ button {
   font-family: "Playfair Display", serif;
   margin: auto;
   padding-top: 24px;
-  width: 1440px;
+  max-width: 1440px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -62,6 +62,7 @@ nav .second-link {
   right: -17px;
 }
 .btn.buy-short {
+  padding: 12px 0px;
   width: 65px;
 }
 .btn.buy-short img {
@@ -70,7 +71,7 @@ nav .second-link {
   left: 29px;
 }
 .btn.raed {
-  padding: 4px 0px 4px 0px;
+  padding: 4px 0px;
   width: 184px;
 }
 .btn.raed a {
@@ -126,7 +127,7 @@ nav .second-link {
   border: 1px solid #CBC4B8;
   position: absolute;
   bottom: 44px;
-  right: 677px;
+  left: 64px;
 }
 #contact .btn.buy {
   position: absolute;
@@ -242,16 +243,23 @@ footer .second-link {
     height: 60px;
   }
   #map-mobile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 60px;
     position: relative;
   }
-  #map-mobile .map-icon {
+  #map-mobile .map-info {
+    position: relative;
+  }
+  #map-mobile .map-info .map-icon {
     position: absolute;
     top: 165px;
-    right: 70px;
+    left: 250px;
   }
   #map-mobile .contact {
     position: relative;
+    max-width: 343px;
     margin: 25px 8px 0px 8px;
     display: flex;
     flex-direction: column;
@@ -369,21 +377,22 @@ footer .second-link {
   margin-bottom: 68px;
 }
 .container-main-page.shop {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
-  padding: 0px 64px 28px 64px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .container-main-page.shop .cost {
   color: #BD6C2C;
 }
 .container-main-page.shop .banner {
-  grid-column: span 4;
-  width: 491px;
-  height: 80px;
   margin-bottom: 28px;
+}
+.container-main-page.shop .layout-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+  gap: 32px;
+  padding: 0px 64px 28px 64px;
 }
 .container-main-page.shop .back-color {
   position: absolute;
@@ -398,8 +407,8 @@ footer .second-link {
     margin-bottom: 60px;
   }
   .container-main-page.main {
-    position: relative;
-    margin: 40px 0px 60px 13px;
+    margin: auto;
+    padding: 40px 0px 60px 13px;
     width: 255px;
     display: flex;
     flex-direction: column;
@@ -451,21 +460,23 @@ footer .second-link {
   }
 }
 .product-card {
+  max-width: 304px;
+  min-height: 500px;
+  position: relative;
   background-color: white;
   padding: 24px;
-  height: 452px;
-  width: 256px;
   border: 1px solid #CBC4B8;
-  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .product-card .info {
-  height: 392px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 .product-card .price {
-  height: 60px;
+  margin-top: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1129,23 +1140,4 @@ p {
   line-height: 24px;
   margin: 0px;
   font-family: "Jost", sans-serif;
-}
-
-@media (max-width: 850px) {
-  .text-2 {
-    font-size: 40px;
-    line-height: 52px;
-  }
-  .text-3 {
-    font-size: 22px;
-  }
-  .text-4 {
-    font-size: 18px;
-  }
-  .text-5 {
-    font-size: 14px;
-  }
-  .text-6 {
-    font-size: 12px;
-  }
 }/*# sourceMappingURL=main.css.map */
