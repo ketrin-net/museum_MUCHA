@@ -3,17 +3,15 @@
 .content-purchase{
     width: auto;
     margin: 74px 64px 72px 64px;
+
+    .titel {
+        margin-bottom: 38px;
+    }
 }
 
 #price-list {
     display: grid;
     grid-template-columns: auto 25%;
-    grid-template-rows: auto 692px;
-
-    .titel {
-        grid-column: span 2;
-        margin-bottom: 38px;
-    }
 
     .cost {
         display: flex;
@@ -42,7 +40,7 @@
 
 .info-ticket{
     display: grid;
-    grid-template-columns: 64px 268px 332px 44px auto 28px 28px 28px;
+    grid-template-columns: 64px 268px 30% 44px auto 28px 28px 28px;
     justify-items: start;
     align-items: center;
 
@@ -146,25 +144,26 @@
     }
 }
 
-@media (min-width: 851px) {
+@media (min-width: 1120px) {
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1119px) {
+
     .content-purchase {
         width: auto;
         margin: 50px 16px 60px 16px;
-    }
-
-    #price-list {
-        display: flex;
-        flex-direction: column;
 
         .titel {
-            margin-bottom: 20px;
             font-size: 40px;
             line-height: 52px;
+            margin-bottom: 20px;
         }
+    }
+    
+    #price-list {
+        display: flex;
+        flex-direction: column-reverse;
 
         .cost {
             gap: 10px;
@@ -176,43 +175,139 @@
         }
 
         .image-info {
-            display: none;
+            background-color: $back-fill-color;
+            margin: 0px 0px 10px 0px;
+
+            p {
+                font-size: 20px;
+                color: $main-text-color;
+            }
         }
     }
 
-    .info-ticket{
-        grid-template-columns: 35px 85px 85px 20px auto 20px 16px 20px;
+    .info-ticket {
+        grid-template-columns: 64px 25% 25% 35px auto 28px 28px 28px;
+
+        .text-2 {
+            font-size: 50px;
+            line-height: 52px
+        }
+        
+        .text-4 {
+            font-size: 28px;
+        }
+
+        .text-5 {
+            font-size: 20px;
+        }
+
+        .info-family {
+            padding-left: 140px;
+            min-width: 228px;
+        }
+    }
+
+    .total-buy {
+        margin-top: 30px;
+        grid-template-columns: auto auto auto auto;
+
+        .text-6 {
+            font-size: 18px;
+        }
+    }
+
+    #guided {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        .text-3 {
+            font-size: 32px;
+        }
+
+        .text-6 {
+            font-size: 18px;
+        }
+
+        .form {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .people {
+            grid-template-columns: auto 28px 28px 28px;
+
+            .change-price {
+                font-size: 20px;
+            }
+        }
+
+        input {
+            font-size: 14px;
+        }
+
+        .datatime {
+            grid-template-columns: 34px auto;
+        }
+
+        .lengua {
+            grid-template-columns: auto 34px;
+        }
+
+        button {
+            padding: 7px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    #price-list {
+        margin: 0px;
+
+        .image-info {
+            p {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .info-ticket {
+        grid-template-columns: 35px 85px 25% 20px auto 22px 22px 22px;
 
         .text-2 {
             font-size: 40px;
             line-height: 52px
         }
-    
+
         .text-4 {
             font-size: 18px;
         }
-    
+
         .text-5 {
             font-size: 14px;
         }
-    
+
         .text-6 {
             font-size: 12px;
         }
 
-        img{
+        img {
             padding: 7px;
             width: 16px;
             height: 16px;
         }
-        
+
         .info-family {
             padding-left: 115px;
             min-width: 128px;
         }
     }
 
-    .total-buy{
+    .total-buy {
         margin-top: 30px;
         grid-template-columns: auto auto auto auto;
 
@@ -221,27 +316,27 @@
         }
     }
 
-    #guided{
+    #guided {
         display: flex;
         flex-direction: column;
         gap: 28px;
-        
+
         .text-3 {
             font-size: 22px;
         }
-    
+
         .text-6 {
             font-size: 12px;
         }
 
-        .form{
+        .form {
             margin-top: 60px;
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
-        
-        .people{
+
+        .people {
             grid-template-columns: auto 28px 28px 28px;
 
             .change-price {
@@ -270,8 +365,9 @@
             height: 20px;
         }
 
-        button{
+        button {
             padding: 7px;
         }
     }
+    
 }

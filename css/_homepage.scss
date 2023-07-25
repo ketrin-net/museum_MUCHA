@@ -49,11 +49,6 @@
             flex-direction: column;
             justify-content: space-between;
         }
-
-        .poster {
-            max-width: 640px;
-            max-height: 388px;
-        }
     }
 
     &.shop {
@@ -89,12 +84,15 @@
     }
 }
 
-@media (min-width: 851px) {
+@media (min-width: 1120px) {
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1119px) {
+    .large-display {
+        display: none !important;
+    }
+
     .container-main-page {
-        margin-bottom: 60px;
 
         .text-2 {
             font-size: 40px;
@@ -102,16 +100,18 @@
         }
 
         &.main {
-            background-image: url("../img/ratio/ratio_index_title.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 40px 0px 60px 13px;
-            display: flex;
-            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            grid-template-columns: 548px auto;
+            grid-template-rows: auto;
 
             .info {
+                position: absolute;
+                bottom: 3px;
+                left: 210px;
                 padding-left: 5px;
-                max-width: 300px;
+                width: 300px;
                 display: flex;
                 flex-direction: column;
             }
@@ -135,15 +135,11 @@
                 line-height: 52px;
             }
 
-            .bot {
-                align-self: flex-end;
-            }
-
             .title-3 {
                 position: relative;
                 bottom: 0px;
                 left: 0px;
-                margin-top: 16px;    
+                margin-top: 16px;
             }
 
             .btn {
@@ -155,34 +151,83 @@
         }
 
         &.about {
-            display: block;
             margin-top: 0px;
-            padding: 28px 16px 60px 19px;
-            background-color: $back-fill-color;
+            padding: 28px 64px 60px 64px;
+
+            .back {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-image: url("../img/MuseumPhoto_main_about.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: blur(8px);
+                z-index: 1;
+
+            }
 
             .info {
-                display: flex;
-                flex-direction: column;
+                background-color: rgba(231, 224, 204, 0.5);
+                box-shadow: 0 0 2px 15px rgba(231, 224, 204, 0.5);
+                position: relative;
+                z-index: 2;
+                gap: 16px;
             }
 
             p {
-                margin-top: 16px;
-                margin-bottom: 0px;
+                font-weight: 500;
             }
 
             .btn {
                 align-self: end;
+
+                a {
+                    color: $main-text-color;
+                }
             }
         }
 
         &.shop {
-            align-items: center;
-            padding: 28px 16px 60px 19px;
+            margin-bottom: 60px;
+            justify-items: center;
+            padding: 0px 64px;
 
             .banner {
                 margin-bottom: 16px;
                 align-self: flex-start;
             }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container-main-page {
+
+        &.main {
+            background-image: url("../img/ratio/ratio_index_title.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 40px 0px 60px 13px;
+            display: flex;
+            flex-direction: column;
+
+            .info {
+                position: relative;
+                padding-left: 5px;
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                bottom: 0px;
+                left: 0px;
+            }
+        }
+
+        &.about {
+            margin-top: 0px;
+            padding: 28px 16px 60px 19px;
         }
     }
 }

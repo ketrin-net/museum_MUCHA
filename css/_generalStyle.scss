@@ -21,6 +21,7 @@ button {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 header {
@@ -196,21 +197,24 @@ footer {
     }
 }
 
-@media (min-width: 851px) {
+@media (min-width: 1120px) {
     .mobile-only {
         display: none !important;
     }
+
+    .pad-display {
+        display: none !important;
+    }
 }
-@media (max-width: 850px) {
-    .desktop-only {
+
+@media (max-width: 1119px) {
+    .large-display {
         display: none !important;
     }
 
     .general-page {
         width: 100%;
-        margin: 0px;
         padding: 0px;
-        overflow: hidden;
     }
 
     header {
@@ -233,7 +237,7 @@ footer {
         padding: 20px 0px 20px 0px;
         position: absolute;
         right: 0px;
-        top: 0px; 
+        top: 0px;
         flex-direction: column;
         gap: 15px;
         width: 60%;
@@ -242,7 +246,7 @@ footer {
         background-color: $golden-text-color;
         border-top-left-radius: 10%;
         border-bottom-left-radius: 10%;
-    
+
         &.visible {
             transform: translateX(0);
         }
@@ -280,7 +284,7 @@ footer {
 
         .map-info {
             position: relative;
-            
+
             .map-icon {
                 position: absolute;
                 top: 165px;
@@ -288,7 +292,7 @@ footer {
             }
         }
 
-        .contact {        
+        .contact {
             position: relative;
             max-width: 343px;
             margin: 25px 8px 0px 8px;
@@ -300,23 +304,23 @@ footer {
                 top: 0px;
                 left: 0px;
             }
-            
+
             .text-3 {
                 position: relative;
                 margin-top: 28px;
             }
-        
+
             .text-4 {
                 position: relative;
                 margin-top: 12px;
                 color: $secondary-text-color;
             }
-    
+
             .text-6 {
                 margin-top: 16px;
                 color: $secondary-text-color;
             }
-    
+
             .text-5 {
                 margin-top: 12px;
                 color: $secondary-text-color;
@@ -331,7 +335,7 @@ footer {
                 }
             }
         }
-}
+    }
 
     footer {
         padding: 28px 16px 40px 16px;
@@ -348,6 +352,15 @@ footer {
         .second-link {
             color: #FFFFFF;
         }
+    }
+}
+
+@media (max-width: 500px) {
+    .pad-display {
+        display: none !important;
+    }
+    .large-display {
+        display: none !important;
     }
 }
 

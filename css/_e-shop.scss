@@ -1,8 +1,9 @@
 @import '_setting';
 
 .product-card {
-    max-width: 304px;
-    min-height: 500px;
+    justify-self: center;
+    width: 256px;
+    max-height: 500px;
     position: relative;
     background-color: white;
     padding: 24px;

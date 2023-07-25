@@ -19,6 +19,7 @@ button {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 header {
@@ -169,20 +170,21 @@ footer .second-link {
   color: #FFFFFF;
 }
 
-@media (min-width: 851px) {
+@media (min-width: 1120px) {
   .mobile-only {
     display: none !important;
   }
+  .pad-display {
+    display: none !important;
+  }
 }
-@media (max-width: 850px) {
-  .desktop-only {
+@media (max-width: 1119px) {
+  .large-display {
     display: none !important;
   }
   .general-page {
     width: 100%;
-    margin: 0px;
     padding: 0px;
-    overflow: hidden;
   }
   header {
     padding: 8px 16px;
@@ -300,6 +302,14 @@ footer .second-link {
     color: #FFFFFF;
   }
 }
+@media (max-width: 500px) {
+  .pad-display {
+    display: none !important;
+  }
+  .large-display {
+    display: none !important;
+  }
+}
 @media (orientation: landscape) {
   nav.top {
     margin-top: 0px;
@@ -349,10 +359,6 @@ footer .second-link {
   flex-direction: column;
   justify-content: space-between;
 }
-.container-main-page.about .poster {
-  max-width: 640px;
-  max-height: 388px;
-}
 .container-main-page.shop {
   position: relative;
   padding: 0px 64px;
@@ -381,25 +387,27 @@ footer .second-link {
   left: 0px;
 }
 
-@media (max-width: 850px) {
-  .container-main-page {
-    margin-bottom: 60px;
+@media (max-width: 1119px) {
+  .large-display {
+    display: none !important;
   }
   .container-main-page .text-2 {
     font-size: 40px;
     line-height: 52px;
   }
   .container-main-page.main {
-    background-image: url("../img/ratio/ratio_index_title.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 40px 0px 60px 13px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding-left: 30px;
+    grid-template-columns: 548px auto;
+    grid-template-rows: auto;
   }
   .container-main-page.main .info {
+    position: absolute;
+    bottom: 3px;
+    left: 210px;
     padding-left: 5px;
-    max-width: 300px;
+    width: 300px;
     display: flex;
     flex-direction: column;
   }
@@ -419,9 +427,6 @@ footer .second-link {
     font-weight: 700;
     line-height: 52px;
   }
-  .container-main-page.main .bot {
-    align-self: flex-end;
-  }
   .container-main-page.main .title-3 {
     position: relative;
     bottom: 0px;
@@ -435,34 +440,74 @@ footer .second-link {
     margin-top: 16px;
   }
   .container-main-page.about {
-    display: block;
     margin-top: 0px;
-    padding: 28px 16px 60px 19px;
-    background-color: rgba(231, 224, 204, 0.3);
+    padding: 28px 64px 60px 64px;
+  }
+  .container-main-page.about .back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/MuseumPhoto_main_about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: 1;
   }
   .container-main-page.about .info {
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(231, 224, 204, 0.5);
+    box-shadow: 0 0 2px 15px rgba(231, 224, 204, 0.5);
+    position: relative;
+    z-index: 2;
+    gap: 16px;
   }
   .container-main-page.about p {
-    margin-top: 16px;
-    margin-bottom: 0px;
+    font-weight: 500;
   }
   .container-main-page.about .btn {
     align-self: end;
   }
+  .container-main-page.about .btn a {
+    color: #363533;
+  }
   .container-main-page.shop {
-    align-items: center;
-    padding: 28px 16px 60px 19px;
+    margin-bottom: 60px;
+    justify-items: center;
+    padding: 0px 64px;
   }
   .container-main-page.shop .banner {
     margin-bottom: 16px;
     align-self: flex-start;
   }
 }
+@media (max-width: 500px) {
+  .container-main-page.main {
+    background-image: url("../img/ratio/ratio_index_title.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 40px 0px 60px 13px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-main-page.main .info {
+    position: relative;
+    padding-left: 5px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    left: 0px;
+  }
+  .container-main-page.about {
+    margin-top: 0px;
+    padding: 28px 16px 60px 19px;
+  }
+}
 .product-card {
-  max-width: 304px;
-  min-height: 500px;
+  justify-self: center;
+  width: 256px;
+  max-height: 500px;
   position: relative;
   background-color: white;
   padding: 24px;
@@ -495,15 +540,13 @@ footer .second-link {
   width: auto;
   margin: 74px 64px 72px 64px;
 }
+.content-purchase .titel {
+  margin-bottom: 38px;
+}
 
 #price-list {
   display: grid;
   grid-template-columns: auto 25%;
-  grid-template-rows: auto 692px;
-}
-#price-list .titel {
-  grid-column: span 2;
-  margin-bottom: 38px;
 }
 #price-list .cost {
   display: flex;
@@ -528,7 +571,7 @@ footer .second-link {
 
 .info-ticket {
   display: grid;
-  grid-template-columns: 64px 268px 332px 44px auto 28px 28px 28px;
+  grid-template-columns: 64px 268px 30% 44px auto 28px 28px 28px;
   justify-items: start;
   align-items: center;
 }
@@ -619,19 +662,19 @@ footer .second-link {
   align-self: flex-end;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1119px) {
   .content-purchase {
     width: auto;
     margin: 50px 16px 60px 16px;
   }
-  #price-list {
-    display: flex;
-    flex-direction: column;
-  }
-  #price-list .titel {
-    margin-bottom: 20px;
+  .content-purchase .titel {
     font-size: 40px;
     line-height: 52px;
+    margin-bottom: 20px;
+  }
+  #price-list {
+    display: flex;
+    flex-direction: column-reverse;
   }
   #price-list .cost {
     gap: 10px;
@@ -641,10 +684,83 @@ footer .second-link {
     background: #CBC4B8;
   }
   #price-list .image-info {
-    display: none;
+    background-color: rgba(231, 224, 204, 0.3);
+    margin: 0px 0px 10px 0px;
+  }
+  #price-list .image-info p {
+    font-size: 20px;
+    color: #363533;
   }
   .info-ticket {
-    grid-template-columns: 35px 85px 85px 20px auto 20px 16px 20px;
+    grid-template-columns: 64px 25% 25% 35px auto 28px 28px 28px;
+  }
+  .info-ticket .text-2 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .info-ticket .text-4 {
+    font-size: 28px;
+  }
+  .info-ticket .text-5 {
+    font-size: 20px;
+  }
+  .info-ticket .info-family {
+    padding-left: 140px;
+    min-width: 228px;
+  }
+  .total-buy {
+    margin-top: 30px;
+    grid-template-columns: auto auto auto auto;
+  }
+  .total-buy .text-6 {
+    font-size: 18px;
+  }
+  #guided {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  #guided .text-3 {
+    font-size: 32px;
+  }
+  #guided .text-6 {
+    font-size: 18px;
+  }
+  #guided .form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #guided .people {
+    grid-template-columns: auto 28px 28px 28px;
+  }
+  #guided .people .change-price {
+    font-size: 20px;
+  }
+  #guided input {
+    font-size: 14px;
+  }
+  #guided .datatime {
+    grid-template-columns: 34px auto;
+  }
+  #guided .lengua {
+    grid-template-columns: auto 34px;
+  }
+  #guided button {
+    padding: 7px;
+  }
+}
+@media (max-width: 500px) {
+  #price-list {
+    margin: 0px;
+  }
+  #price-list .image-info p {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .info-ticket {
+    grid-template-columns: 35px 85px 25% 20px auto 22px 22px 22px;
   }
   .info-ticket .text-2 {
     font-size: 40px;
