@@ -1,15 +1,19 @@
 @import '_setting';
 
-.container-main-page {
-    width: auto;
+.case-homepage {
     margin-bottom: 72px;
     position: relative;
 
+    .container {
+        box-sizing: border-box;
+        max-width: 1440px;
+        margin: auto;
+    }
+
     &.main {
-        margin-bottom: 0%;
+        margin-top: 0px;
         display: grid;
-        grid-template-columns: 980px auto;
-        grid-template-rows: auto 1px;
+        border-bottom: 1px solid $color-divider;
 
         .title-1 {
             position: absolute;
@@ -38,39 +42,54 @@
     }
 
     &.about {
-        margin-top: 73px;
-        padding: 72px 64px;
-        display: flex;
-        gap: 32px;
         background-color: $back-fill-color;
+
+        .container {
+            padding: 72px 64px;
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+        }
 
         .info {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+        }
+
+        p {
+            margin-top: 26px;
+        }
+
+        .btn {
+            margin-top: 68px;
+        }
+
+        .poster {
+            width: 640px;
+            height: 388px;
         }
     }
 
     &.shop {
-        position: relative;
         padding: 0px 64px;
         display: flex;
         flex-direction: column;
 
-        .cost{
-            color: $color-orange;
-        }
         
         .banner{
             margin-bottom: 28px;
         }
-
+        
         .layout-card {
             position: relative;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+            display: flex;
+            flex-direction: row;
             gap: 32px;
             padding-bottom: 28px;
+        }
+        
+        .cost{
+            color: $color-orange;
         }
 
         .back-color{
@@ -84,15 +103,15 @@
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 851px) {
 }
 
-@media (max-width: 1119px) {
-    .large-display {
+@media (max-width: 850px) {
+    .desktop-display {
         display: none !important;
     }
 
-    .container-main-page {
+    .container-homepage {
 
         .text-2 {
             font-size: 40px;
@@ -100,20 +119,21 @@
         }
 
         &.main {
-            margin-top: 20px;
-            margin-bottom: 60px;
-            padding-left: 30px;
-            grid-template-columns: 548px auto;
-            grid-template-rows: auto;
-
+            background-image: url("../img/ratio/ratio_index_title.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 40px 0px 60px 13px;
+            display: flex;
+            flex-direction: column;
+            
             .info {
-                position: absolute;
-                bottom: 3px;
-                left: 210px;
+                position: relative;
                 padding-left: 5px;
-                width: 300px;
+                max-width: 300px;
                 display: flex;
                 flex-direction: column;
+                bottom: 0px;
+                left: 0px;
             }
 
             .title-1 {
@@ -152,32 +172,10 @@
 
         &.about {
             margin-top: 0px;
-            padding: 28px 64px 60px 64px;
-
-            .back {
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                width: 100%;
-                height: 100%;
-                background-image: url("../img/MuseumPhoto_main_about.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-                filter: blur(8px);
-                z-index: 1;
-
-            }
+            padding: 28px 16px 60px 19px;
 
             .info {
-                background-color: rgba(231, 224, 204, 0.5);
-                box-shadow: 0 0 2px 15px rgba(231, 224, 204, 0.5);
-                position: relative;
-                z-index: 2;
                 gap: 16px;
-            }
-
-            p {
-                font-weight: 500;
             }
 
             .btn {
@@ -198,36 +196,6 @@
                 margin-bottom: 16px;
                 align-self: flex-start;
             }
-        }
-    }
-}
-
-@media (max-width: 500px) {
-
-    .container-main-page {
-
-        &.main {
-            background-image: url("../img/ratio/ratio_index_title.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 40px 0px 60px 13px;
-            display: flex;
-            flex-direction: column;
-
-            .info {
-                position: relative;
-                padding-left: 5px;
-                max-width: 300px;
-                display: flex;
-                flex-direction: column;
-                bottom: 0px;
-                left: 0px;
-            }
-        }
-
-        &.about {
-            margin-top: 0px;
-            padding: 28px 16px 60px 19px;
         }
     }
 }

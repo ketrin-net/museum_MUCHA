@@ -1,10 +1,8 @@
 @import '_setting';
 
 .product-card {
-    justify-self: center;
-    width: 256px;
-    max-height: 500px;
-    position: relative;
+    box-sizing: border-box;
+    padding: 24px;
     background-color: white;
     padding: 24px;
     border: 1px solid #CBC4B8;
@@ -12,14 +10,21 @@
     flex-direction: column;
     justify-content: space-between;
 
-    .info {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+    .poster {
+        width: 256px;
+        height: 260px;
+    }
+    
+    p {
+        margin-top: 16px;
+    }
+
+    h5 {
+        margin-top: 12px;
     }
 
     .price {
-        margin-top: 24px;
+        margin-top: 16px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -30,8 +35,6 @@
     }
 
     &.see-all {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 270px 61px 170px 84px;
     }
 }

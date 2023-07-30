@@ -5,6 +5,10 @@ html, body {
     padding: 0
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 a {
     text-decoration: none;
     color: $main-text-color;
@@ -17,25 +21,32 @@ button {
     background-color: rgb(255, 255, 255, 0);
 }
 
-.general-page {
+.main {
+    box-sizing: border-box;
     color: $main-text-color;
     font-family: $main-font;
-    margin: auto;
-    padding-top: 24px;
-    max-width: 1440px;
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 header {
-    position: relative;
+    box-sizing: border-box;
+    margin-top: 24px;
     padding: 0px 64px 24px 64px;
-    max-height: 60px;
-    flex-shrink: 0;
+    height: 84px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid $color-divider;
+
+    .language {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        margin-right: 65px;
+        gap: 8px;
+        color: $secondary-text-color;
+    }
 }
 
 nav {
@@ -47,19 +58,16 @@ nav {
     gap: 32px;
 
     .second-link{
+        margin-top: 15px;
+        margin-bottom: 15px;
         color: $secondary-text-color;
     }
 }
 
-.language {
-    display: flex;
-    align-items: center;
-    margin-right: 65px;
-    gap: 8px;
-    color: $secondary-text-color;
-}
-
 .btn {
+    box-sizing: border-box;
+    padding: 14px 0px;
+
     span {
         position: relative;
     }
@@ -75,9 +83,8 @@ nav {
     }
 
     &.buy-short{
-        padding: 12px 0px;
+        padding: 14px 0px;
         width: 65px;
-        // height: 60px;
 
         img {
             position: absolute;
@@ -102,7 +109,7 @@ nav {
     }
 
     &.see {
-        width: 150px;
+        width: 159px;
 
         img {
             position: absolute;
@@ -122,43 +129,31 @@ nav {
     }
 }
 
-.divider{
-    width: 100%;
-    height: 1px;
-    background: #CBC4B8;
-    border: 1px;
-}
-
 #map {
-    height: 540px;
-    margin-bottom: 72px;
+    box-sizing: border-box;
     position: relative;
+    margin-bottom: 72px;
+    padding: 92px 0px 44px 64px;
+    border-top: 1px solid $color-divider;
 
-    .map-info {
+    .map-poster {
         position: absolute;
         top: 60px;
         right: 0px;
     }
-
-    .map-icon {
-        position: absolute;
-        bottom: 222px;
-        right: 239px;
-    }
-
 }
 
 #contact {
+    box-sizing: border-box;
+    width: 699px;
     background-color: #FFFFFF;
     border: 1px solid  #CBC4B8;
-    position: absolute;
-    bottom: 44px;
-    left: 64px;
+    position: relative;
 
     .btn.buy {
         position: absolute;
-        bottom: 96px;
-        left: 481px;
+        bottom: 82px;
+        right: 59px;
     }
 
     .cont-info {
@@ -186,10 +181,11 @@ nav {
 }
 
 footer {
+    box-sizing: border-box;
+    height: 140px;
     background-color: $main-text-color;
     color:#FFFFFF;
     padding: 40px 64px;
-    height: 80px;
     display: flex;
     align-items: center;
 
@@ -202,18 +198,14 @@ footer {
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 851px) {
     .mobile-only {
-        display: none !important;
-    }
-
-    .pad-display {
         display: none !important;
     }
 }
 
-@media (max-width: 1119px) {
-    .large-display {
+@media (max-width: 850px) {
+    .desktop-display {
         display: none !important;
     }
 
@@ -236,7 +228,7 @@ footer {
         }
     }
 
-    nav.top {
+    nav.header {
         z-index: 90;
         margin-top: 69px;
         padding: 20px 0px 20px 0px;
@@ -267,17 +259,12 @@ footer {
         }
     }
 
-    nav.bot {
+    nav.footer {
         margin-top: 20px;
         margin-bottom: 28px;
         flex-direction: column;
         padding-left: 0px;
         align-items: flex-start;
-        gap: 32px;
-
-        .second-link {
-            height: 60px;
-        }
     }
 
     #map-mobile {
@@ -357,15 +344,6 @@ footer {
         .second-link {
             color: #FFFFFF;
         }
-    }
-}
-
-@media (max-width: 500px) {
-    .pad-display {
-        display: none !important;
-    }
-    .large-display {
-        display: none !important;
     }
 }
 
