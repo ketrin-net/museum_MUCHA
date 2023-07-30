@@ -11,7 +11,7 @@
 
 #price-list {
     display: grid;
-    grid-template-columns: auto 25%;
+    grid-template-columns: auto 336px;
 
     .cost {
         display: flex;
@@ -31,6 +31,11 @@
         display: flex;
         flex-direction: column;
 
+        img {
+            width: 304px;
+            height: 384px;
+        }
+
         p {
             padding: 24px;
             color: white;
@@ -40,9 +45,11 @@
 
 .info-ticket{
     display: grid;
-    grid-template-columns: 64px 268px 30% 44px auto 28px 28px 28px;
+    grid-template-columns: 68px 268px 336px 44px 178px 28px 28px 28px;
     justify-items: start;
     align-items: center;
+    padding-bottom: 19px;
+    border-bottom: 1px solid $color-divider;
 
     span {
         color: $secondary-text-color;
@@ -53,21 +60,15 @@
     }
     
     .info-family {
-        margin-top: 4px;
+        margin-top: 7px;
         padding-left: 336px;
         min-width: 336px;
     }
 }
 
-.change-price {
-    justify-self: center;
-    color: $secondary-text-color;
-}
-
 .total-buy{
-    margin-top: 20px;
     display: grid;
-    grid-template-columns: auto 80px 92px 255px;
+    grid-template-columns: auto 82px 92px 212px;
     justify-items: start;
     align-items: center;
 
@@ -80,12 +81,17 @@
     }    
 }
 
-#guided{
+.change-amount {
+    justify-self: center;
+    color: $secondary-text-color;
+}
+
+#guided {
     display: flex;
     flex-direction: column;
     gap: 28px;
 
-    .form{
+    .form {
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(3, 416px);
@@ -144,11 +150,11 @@
     }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 851px) {
 
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 850px) {
 
     .content-purchase {
         width: auto;
@@ -239,7 +245,7 @@
         .people {
             grid-template-columns: auto 28px 28px 28px;
 
-            .change-price {
+            .change-amount {
                 font-size: 20px;
             }
         }
@@ -339,7 +345,7 @@
         .people {
             grid-template-columns: auto 28px 28px 28px;
 
-            .change-price {
+            .change-amount {
                 font-size: 14px;
             }
         }
