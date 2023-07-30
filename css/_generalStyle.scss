@@ -1,5 +1,10 @@
 @import '_setting';
 
+html, body {
+    margin: 0;
+    padding: 0
+}
+
 a {
     text-decoration: none;
     color: $main-text-color;
@@ -46,7 +51,7 @@ nav {
     }
 }
 
-.lenguage {
+.language {
     display: flex;
     align-items: center;
     margin-right: 65px;
@@ -81,7 +86,7 @@ nav {
         }
     }
     
-    &.raed {
+    &.read {
         padding: 4px 0px;
         width: 184px;
 

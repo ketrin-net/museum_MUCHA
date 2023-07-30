@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   color: #363533;
@@ -43,7 +48,7 @@ nav .second-link {
   color: #85817A;
 }
 
-.lenguage {
+.language {
   display: flex;
   align-items: center;
   margin-right: 65px;
@@ -71,14 +76,14 @@ nav .second-link {
   bottom: 8px;
   left: 29px;
 }
-.btn.raed {
+.btn.read {
   padding: 4px 0px;
   width: 184px;
 }
-.btn.raed a {
+.btn.read a {
   color: #85817A;
 }
-.btn.raed img {
+.btn.read img {
   position: absolute;
   bottom: 3px;
   left: 123px;
