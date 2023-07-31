@@ -87,28 +87,32 @@
 }
 
 #guided {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 24px;
 
     .form {
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(3, 416px);
-        grid-template-rows: repeat(5, 52px);
+        grid-template-rows: repeat(5, auto);
         column-gap: 32px;
         row-gap: 28px;
     }
 
     .title {
         grid-column: span 3;
+        margin-bottom: 12px;
     }
 
     .full-name {
+        height: 40px;
         border-bottom: 1px solid #CBC4B8;
     }
 
     .people{
+        height: 52px;
         grid-column: span 3;
         display: grid;
         grid-template-columns: 336px 28px 28px 28px;
@@ -123,29 +127,30 @@
         font-style: normal;
         font-weight: 400;
         line-height: 32px;
-        padding: 8px 20px;
+        padding: 0px;
+        margin-left: 20px;
+        margin-bottom: 8px;
         border: none;
     }
 
-    .datatime {
-        margin-bottom: 2px;
-        display: grid;
-        grid-template-columns: 52px auto;
+    .datatime, .languages  {
+        height: 60px;
+        display: flex;
         border-bottom: 1px solid #CBC4B8;
+
+        button img{
+            padding: 14px;
+            width: 24px;
+            height: 24px;
+        }
     }
 
-    .lengua {
-        display: grid;
-        grid-template-columns: auto 52px;
-        border-bottom: 1px solid #CBC4B8;
-    }
-
-    button{
-        padding: 14px;
+    .languages {
+        justify-content: space-between;
     }
 
     .send {
-        margin-top: 5px;
+        height: 44px;
         align-self: flex-end;
     }
 }

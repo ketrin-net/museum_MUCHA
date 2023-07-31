@@ -2,14 +2,17 @@
 
 .about-author{
     position: relative;
-    margin: 0px 64px 70px 64px;
+    margin: 0px 64px 94px 64px;
     padding-top: 72px;
     display: flex;
     flex-direction: row;
     gap: 32px;
     
-    img{
+    .photo_author{
         position: relative;
+        width: 640;
+        height: 566;
+        object-fit: contain;
     }
 
     .ratio{
@@ -38,6 +41,10 @@
     margin: 0px 64px 74px 64px;
     display: grid;
 
+    .title {
+        margin-bottom: 26px;
+    }
+
     .list {
         display: flex;
         flex-direction: column;
@@ -45,39 +52,28 @@
     }
 
     .first-block {
-        display: grid;
-        grid-template-columns: 336px auto;
-        grid-template-rows: 80px auto;
-
-        .title{
-            grid-column: span 2;
-        }
+        display: flex;
+        gap: 32px;
 
         img {
-            margin-top: 14px;
-        }
-    }
-
-    .line {
-        height: 1px;
-        background: #CBC4B8;
-        border: 1px;
-
-        &.short{
-            width: 640px;
+            align-self: flex-end;
+            width: 304px;
+            height: 566px;
         }
     }
 
     .second-block {
-        display: grid;
-        grid-template-columns: auto 336px;
-        grid-template-rows: auto;
+        display: flex;
+        gap: 32px;
 
         .photo {
-            padding-left: 32px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            img {
+                width: 304px;
+            }
         }
 
         .list{
@@ -87,14 +83,108 @@
 }
 
 .years-info {
-    min-height: 60px;
+    height: 60px;
     padding-right: 112px;
+    padding-bottom: 19px;
     display: flex;
     flex-direction: row;
     gap: 32px;
     align-items: center;
+    border-bottom: 1px solid $color-divider;
 
     span {
         align-self: flex-start;
+    }
+
+    &.large {
+        height: 128px;
+    }
+
+    &.first {
+        padding-bottom: 12px;
+    }
+
+    &.last {
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+}
+
+@media (min-width: 851px) {
+
+}
+
+@media (max-width: 850px) {
+
+    .about-author {
+        padding-top: 0px;
+        margin: 28px 20px;
+        flex-direction: column;
+        gap: 8px;
+
+        .photo_author {
+            position: relative;
+            width: 640;
+            height: 566;
+            object-fit: scale-down;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 52px;
+        }
+
+        span {
+            color: $color-orange;
+            padding-left: 65px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    }
+    
+    .bio-in-years {
+        margin: 10px 20px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            margin-bottom: 35px;
+        }
+
+        .list {
+            gap: 10px;
+        }
+
+        .second-block {
+            .list {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .years-info {
+        height: auto;
+        padding-right: 0px;
+        padding-bottom: 9px;
+
+        .text-4 {
+            font-size: 22px;
+        }
+
+        &.large {
+            height: auto;
+        }
+
+        &.first {
+            padding-bottom: 9px;
+        }
+
+        &.last {
+            border-bottom: none;
+            padding-bottom: 0px;
+        }
     }
 }
