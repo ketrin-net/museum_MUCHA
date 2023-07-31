@@ -638,103 +638,36 @@ footer .second-link {
 
 @media (max-width: 850px) {
   .content-purchase {
-    width: auto;
-    margin: 50px 16px 60px 16px;
+    margin: 28px 20px;
   }
   .content-purchase .titel {
     font-size: 40px;
     line-height: 52px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   #price-list {
     display: flex;
     flex-direction: column-reverse;
   }
   #price-list .cost {
-    gap: 10px;
-  }
-  #price-list .line {
-    height: 1px;
-    background: #CBC4B8;
+    gap: 5px;
   }
   #price-list .image-info {
-    background-color: rgba(231, 224, 204, 0.3);
-    margin: 0px 0px 10px 0px;
-  }
-  #price-list .image-info p {
-    font-size: 20px;
-    color: #363533;
-  }
-  .info-ticket {
-    grid-template-columns: 64px 25% 25% 35px auto 28px 28px 28px;
-  }
-  .info-ticket .text-2 {
-    font-size: 50px;
-    line-height: 52px;
-  }
-  .info-ticket .text-4 {
-    font-size: 28px;
-  }
-  .info-ticket .text-5 {
-    font-size: 20px;
-  }
-  .info-ticket .info-family {
-    padding-left: 140px;
-    min-width: 228px;
-  }
-  .total-buy {
-    margin-top: 30px;
-    grid-template-columns: auto auto auto auto;
-  }
-  .total-buy .text-6 {
-    font-size: 18px;
-  }
-  #guided {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-  }
-  #guided .text-3 {
-    font-size: 32px;
-  }
-  #guided .text-6 {
-    font-size: 18px;
-  }
-  #guided .form {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  #guided .people {
-    grid-template-columns: auto 28px 28px 28px;
-  }
-  #guided .people .change-amount {
-    font-size: 20px;
-  }
-  #guided input {
-    font-size: 14px;
-  }
-  #guided .datatime {
-    grid-template-columns: 34px auto;
-  }
-  #guided .lengua {
-    grid-template-columns: auto 34px;
-  }
-  #guided button {
-    padding: 7px;
-  }
-}
-@media (max-width: 500px) {
-  #price-list {
     margin: 0px;
+    margin-bottom: 12px;
+    background-color: #85817A;
+  }
+  #price-list .image-info img {
+    display: none;
   }
   #price-list .image-info p {
     padding: 10px;
     font-size: 14px;
+    line-height: 16px;
   }
   .info-ticket {
-    grid-template-columns: 35px 85px 25% 20px auto 22px 22px 22px;
+    grid-template-columns: 35px 85px 90px 20px auto 22px 22px 22px;
+    padding-bottom: 5px;
   }
   .info-ticket .text-2 {
     font-size: 40px;
@@ -755,11 +688,11 @@ footer .second-link {
     height: 16px;
   }
   .info-ticket .info-family {
-    padding-left: 115px;
+    margin-top: 0px;
+    padding-left: 120px;
     min-width: 128px;
   }
   .total-buy {
-    margin-top: 30px;
     grid-template-columns: auto auto auto auto;
   }
   .total-buy p {
@@ -768,7 +701,7 @@ footer .second-link {
   #guided {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 14px;
   }
   #guided .text-3 {
     font-size: 22px;
@@ -777,7 +710,7 @@ footer .second-link {
     font-size: 12px;
   }
   #guided .form {
-    margin-top: 60px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -785,27 +718,19 @@ footer .second-link {
   #guided .people {
     grid-template-columns: auto 28px 28px 28px;
   }
-  #guided .people .change-amount {
-    font-size: 14px;
+  #guided .people .text-5 {
+    font-size: 18px;
   }
   #guided input {
     font-size: 14px;
   }
-  #guided .datatime {
-    grid-template-columns: 34px auto;
+  #guided .datatime, #guided .languages {
+    height: 40px;
   }
-  #guided .datatime input {
-    padding-left: 0px;
-  }
-  #guided .lengua {
-    grid-template-columns: auto 34px;
-  }
-  #guided img {
-    width: 20px;
-    height: 20px;
-  }
-  #guided button {
+  #guided .datatime button img, #guided .languages button img {
     padding: 7px;
+    width: 16px;
+    height: 16px;
   }
 }
 .about-author {

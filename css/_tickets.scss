@@ -162,13 +162,12 @@
 @media (max-width: 850px) {
 
     .content-purchase {
-        width: auto;
-        margin: 50px 16px 60px 16px;
+        margin: 28px 20px;
 
         .titel {
             font-size: 40px;
             line-height: 52px;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
     }
     
@@ -177,149 +176,61 @@
         flex-direction: column-reverse;
 
         .cost {
-            gap: 10px;
-        }
-
-        .line {
-            height: 1px;
-            background: #CBC4B8;
+            gap: 5px;
         }
 
         .image-info {
-            background-color: $back-fill-color;
-            margin: 0px 0px 10px 0px;
+            margin: 0px;
+            margin-bottom: 12px;
+            background-color: $secondary-text-color;
 
-            p {
-                font-size: 20px;
-                color: $main-text-color;
+            img {
+                display: none;
             }
-        }
-    }
 
-    .info-ticket {
-        grid-template-columns: 64px 25% 25% 35px auto 28px 28px 28px;
-
-        .text-2 {
-            font-size: 50px;
-            line-height: 52px
-        }
-        
-        .text-4 {
-            font-size: 28px;
-        }
-
-        .text-5 {
-            font-size: 20px;
-        }
-
-        .info-family {
-            padding-left: 140px;
-            min-width: 228px;
-        }
-    }
-
-    .total-buy {
-        margin-top: 30px;
-        grid-template-columns: auto auto auto auto;
-
-        .text-6 {
-            font-size: 18px;
-        }
-    }
-
-    #guided {
-        display: flex;
-        flex-direction: column;
-        gap: 28px;
-
-        .text-3 {
-            font-size: 32px;
-        }
-
-        .text-6 {
-            font-size: 18px;
-        }
-
-        .form {
-            margin-top: 60px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .people {
-            grid-template-columns: auto 28px 28px 28px;
-
-            .change-amount {
-                font-size: 20px;
-            }
-        }
-
-        input {
-            font-size: 14px;
-        }
-
-        .datatime {
-            grid-template-columns: 34px auto;
-        }
-
-        .lengua {
-            grid-template-columns: auto 34px;
-        }
-
-        button {
-            padding: 7px;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-
-    #price-list {
-        margin: 0px;
-
-        .image-info {
             p {
                 padding: 10px;
                 font-size: 14px;
+                line-height: 16px;
             }
         }
     }
 
     .info-ticket {
-        grid-template-columns: 35px 85px 25% 20px auto 22px 22px 22px;
+        grid-template-columns: 35px 85px 90px 20px auto 22px 22px 22px;
+        padding-bottom: 5px;
 
         .text-2 {
             font-size: 40px;
             line-height: 52px
         }
-
+    
         .text-4 {
             font-size: 18px;
         }
-
+    
         .text-5 {
             font-size: 14px;
         }
-
+    
         .text-6 {
             font-size: 12px;
         }
-
+    
         img {
             padding: 7px;
             width: 16px;
             height: 16px;
         }
-
+    
         .info-family {
-            padding-left: 115px;
+            margin-top: 0px;
+            padding-left: 120px;
             min-width: 128px;
         }
     }
 
     .total-buy {
-        margin-top: 30px;
         grid-template-columns: auto auto auto auto;
 
         p {
@@ -330,18 +241,18 @@
     #guided {
         display: flex;
         flex-direction: column;
-        gap: 28px;
+        gap: 14px;
 
         .text-3 {
-            font-size: 22px;
-        }
-
+                font-size: 22px;
+            }
+    
         .text-6 {
             font-size: 12px;
         }
 
         .form {
-            margin-top: 60px;
+            margin-top: 20px;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -350,8 +261,8 @@
         .people {
             grid-template-columns: auto 28px 28px 28px;
 
-            .change-amount {
-                font-size: 14px;
+            .text-5 {
+                font-size: 18px;
             }
         }
 
@@ -359,26 +270,14 @@
             font-size: 14px;
         }
 
-        .datatime {
-            grid-template-columns: 34px auto;
+        .datatime, .languages {
+            height: 40px;
 
-            input {
-                padding-left: 0px;
+            button img {
+                padding: 7px;
+                width: 16px;
+                height: 16px;
             }
         }
-
-        .lengua {
-            grid-template-columns: auto 34px;
-        }
-
-        img {
-            width: 20px;
-            height: 20px;
-        }
-
-        button {
-            padding: 7px;
-        }
     }
-    
 }
