@@ -5,6 +5,7 @@
     position: relative;
 
     .container {
+        position: relative;
         box-sizing: border-box;
         max-width: 1440px;
         margin: auto;
@@ -78,20 +79,23 @@
 
     &.shop {
         padding: 0px 64px;
-        display: flex;
-        flex-direction: column;
-
         
         .banner{
             margin-bottom: 28px;
         }
         
-        .layout-card {
+        .card-layout {
             position: relative;
             display: flex;
             flex-direction: row;
-            gap: 32px;
-            padding-bottom: 28px;
+            gap: 23px;
+            margin-bottom: 28px;
+            overflow-x: auto;
+            scroll-behavior: smooth
+        }
+
+        .card-layout::-webkit-scrollbar {
+            display: none;
         }
         
         .cost{
@@ -105,6 +109,31 @@
             height: 200px;
             bottom: 0px;
             left: 0px;
+        }
+
+        .nxt-btn, .pre-btn {
+            position: absolute;
+            width: 5vw;
+            height: 100%;
+        }
+
+        .nxt-btn {
+            right: 0px;
+        }
+
+        .pre-btn {
+            left: 0px;
+            transform: rotate(180deg);
+        }
+
+        .pre-btn img,
+        .nxt-btn img {
+            opacity: 0.4;
+        }
+
+        .nxt-btn:hover img,
+        .pre-btn:hover img {
+            opacity: 1;
         }
     }
 }
@@ -179,9 +208,10 @@
 
         &.about {
             margin-top: 0px;
+            margin-bottom: 60px;
 
             .container {
-                padding: 28px 16px 60px 19px;
+                padding: 28px 16px 60px 20px;
             }
 
             article {
@@ -199,11 +229,20 @@
         &.shop {
             margin-bottom: 60px;
             justify-items: center;
-            padding: 0px 64px;
+            padding: 0px ;
+
+            .container {
+                padding: 0px 16px 0px 20px;
+            }
 
             .banner {
                 margin-bottom: 16px;
                 align-self: flex-start;
+            }
+
+            .nxt-btn,
+            .pre-btn {
+                display: none;
             }
         }
     }

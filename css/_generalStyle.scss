@@ -5,10 +5,6 @@ html, body {
     padding: 0
 }
 
-::-webkit-scrollbar {
-    width: 0;
-}
-
 a {
     text-decoration: none;
     color: $main-text-color;
@@ -233,7 +229,7 @@ footer {
         }
     }
 
-    nav.header {
+    nav.top {
         z-index: 90;
         margin-top: 69px;
         padding: 20px 0px 20px 0px;

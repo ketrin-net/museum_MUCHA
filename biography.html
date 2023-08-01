@@ -14,13 +14,13 @@
 <body>
     <header>
         <a href="index.html"><span class="text-3">MUCHA</span></a>
-        <nav class="header text-6 desktop-only">
+        <nav class="top text-6 desktop-only">
             <a href="exhibition.html" class="second-link">EXHIBITION</a>
             <a href="biography.html" class="second-link">BIOGRAPHY</a>
             <a href="#" class="second-link">E-SHOP</a>
             <a href="#" class="second-link">CONTACTS</a>
         </nav>
-        <nav class="header text-6 mobile-only">
+        <nav class="top text-6 mobile-only">
             <a href="exhibition.html" class="second-link">EXHIBITION</a>
             <div class="divider"></div>
             <a href="biography.html" class="second-link">BIOGRAPHY</a>
@@ -46,7 +46,7 @@
                 <span class="text-5">BUY TICKETS</span>
             </a>
         </div>
-        <button class="menu-btn mobile-only"><img src="./img/icon/menu_header_mobile.svg"></button>
+        <button class="menu-btn mobile-only" onclick="toggleBurgerMenuVisibility()"><img src="./img/icon/menu_header_mobile.svg"></button>
     </header>
     <div class="main">
         <div class="about-author desktop-only">
@@ -241,5 +241,6 @@
             </a>
         </div>
     </footer>
+    <script src="./js/general.js"></script>
 </body>
 </html>

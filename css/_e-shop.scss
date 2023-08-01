@@ -11,8 +11,9 @@
     justify-content: space-between;
 
     .poster {
-        width: 256px;
-        height: 260px;
+        max-width: 256px;
+        max-height: 260px;
+        object-fit: scale-down;
     }
     
     p {
@@ -36,5 +37,20 @@
 
     &.see-all {
         padding: 270px 61px 170px 84px;
+    }
+}
+
+@media (min-width: 851px) {
+}
+
+@media (max-width: 850px) {
+
+    .product-card {
+        width: 268px;
+        height: 440px;
+
+        &.see-all {
+            padding: 222px 61px 170px 86px;
+        }
     }
 }
