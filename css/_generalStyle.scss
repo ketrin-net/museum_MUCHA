@@ -24,6 +24,13 @@ button {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+
+    .container {
+        position: relative;
+        box-sizing: border-box;
+        max-width: 1440px;
+        margin: auto;
+    }
 }
 
 header {
@@ -229,7 +236,7 @@ footer {
         }
     }
 
-    nav.top {
+    navburger-menu {
         z-index: 90;
         margin-top: 69px;
         padding: 20px 0px 20px 0px;

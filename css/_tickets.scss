@@ -4,7 +4,7 @@
     width: auto;
     margin: 74px 64px 72px 64px;
 
-    .titel {
+    h1 {
         margin-bottom: 38px;
     }
 }
@@ -45,7 +45,7 @@
 
 .info-ticket{
     display: grid;
-    grid-template-columns: 68px 268px 336px 44px 178px 28px 28px 28px;
+    grid-template-columns: 68px 268px 336px 44px auto 28px 28px 28px;
     justify-items: start;
     align-items: center;
     padding-bottom: 19px;
@@ -95,7 +95,7 @@
     .form {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(3, 416px);
+        grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(5, auto);
         column-gap: 32px;
         row-gap: 28px;

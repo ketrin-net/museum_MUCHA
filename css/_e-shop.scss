@@ -1,7 +1,118 @@
 @import '_setting';
 
+.shop-block {
+    position: relative;
+
+    .container {
+        padding: 72px 64px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .consumer-basket {
+            box-sizing: border-box;
+            height: 52px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+    
+            span {
+                color: $secondary-text-color;
+            }
+    
+            img {
+                padding: 15px 13px 13px 15px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .back-color {
+        position: absolute;
+        right: 0px;
+        top: 520px;
+        width: 60%;
+        height: 200px;
+        background-color: $golden-text-color;
+    }
+}
+
+#shop {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+
+    .filtres {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        button {
+            color: $secondary-text-color;
+            text-align: left;
+        }
+    }
+
+    .promo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .discounts {
+        display: flex;
+        gap: 32px;
+    }
+    
+    .navigation {
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        height: 40px;
+
+        .pages {
+            margin: 0px 28px;
+            display: flex;
+            gap: 8px;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+            padding: 8px;
+        }
+    }
+}
+
+
+.card-layout {
+    box-sizing: border-box;
+    height: 1028px;
+    position: relative;
+    display: flex;
+    gap: 26px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.card-layout::-webkit-scrollbar {
+    display: none;
+}
+
 .product-card {
     box-sizing: border-box;
+    width: 304px;
+    height: 500px;
     padding: 24px;
     background-color: white;
     padding: 24px;
@@ -32,6 +143,14 @@
 
         .cost h5 {
             color: $color-orange;
+        }
+    }
+
+    .cost {
+        color: $color-orange;
+
+        &.old {
+            color: $color-divider;
         }
     }
 

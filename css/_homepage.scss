@@ -4,13 +4,6 @@
     margin-bottom: 72px;
     position: relative;
 
-    .container {
-        position: relative;
-        box-sizing: border-box;
-        max-width: 1440px;
-        margin: auto;
-    }
-
     &.main {
         margin-top: 0px;
         display: grid;
@@ -83,23 +76,13 @@
         .banner{
             margin-bottom: 28px;
         }
-        
-        .card-layout {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            gap: 23px;
-            margin-bottom: 28px;
-            overflow-x: auto;
-            scroll-behavior: smooth
-        }
 
-        .card-layout::-webkit-scrollbar {
-            display: none;
-        }
-        
-        .cost{
-            color: $color-orange;
+        .card-layout {
+            height: auto;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            margin-bottom: 28px;
+            padding: 0px;
         }
 
         .back-color{

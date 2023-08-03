@@ -23,6 +23,12 @@ button {
   flex-direction: column;
   overflow: hidden;
 }
+.main .container {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: auto;
+}
 
 header {
   box-sizing: border-box;
@@ -199,7 +205,7 @@ footer .second-link {
     padding: 8px;
     color: #85817A;
   }
-  nav.top {
+  navburger-menu {
     z-index: 90;
     margin-top: 69px;
     padding: 20px 0px 20px 0px;
@@ -215,13 +221,13 @@ footer .second-link {
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
   }
-  nav.top.visible {
+  navburger-menu.visible {
     transform: translateX(0);
   }
-  nav.top .second-link {
+  navburger-menu .second-link {
     color: #85817A;
   }
-  nav.top .divider {
+  navburger-menu .divider {
     width: 40%;
     height: 1px;
     background: #85817A;
@@ -301,12 +307,6 @@ footer .second-link {
   margin-bottom: 72px;
   position: relative;
 }
-.case-homepage .container {
-  position: relative;
-  box-sizing: border-box;
-  max-width: 1440px;
-  margin: auto;
-}
 .case-homepage.main {
   margin-top: 0px;
   display: grid;
@@ -366,19 +366,11 @@ footer .second-link {
   margin-bottom: 28px;
 }
 .case-homepage.shop .card-layout {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  gap: 23px;
+  height: auto;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
   margin-bottom: 28px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-.case-homepage.shop .card-layout::-webkit-scrollbar {
-  display: none;
-}
-.case-homepage.shop .cost {
-  color: #BD6C2C;
+  padding: 0px;
 }
 .case-homepage.shop .back-color {
   position: absolute;
@@ -495,8 +487,103 @@ footer .second-link {
     display: none;
   }
 }
+.shop-block {
+  position: relative;
+}
+.shop-block .container {
+  padding: 72px 64px;
+}
+.shop-block h1 {
+  margin-bottom: 40px;
+}
+.shop-block .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.shop-block .title .consumer-basket {
+  box-sizing: border-box;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.shop-block .title .consumer-basket span {
+  color: #85817A;
+}
+.shop-block .title .consumer-basket img {
+  padding: 15px 13px 13px 15px;
+  width: 24px;
+  height: 24px;
+}
+.shop-block .back-color {
+  position: absolute;
+  right: 0px;
+  top: 520px;
+  width: 60%;
+  height: 200px;
+  background-color: #E7E0CC;
+}
+
+#shop {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+#shop .filtres {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+#shop .filtres button {
+  color: #85817A;
+  text-align: left;
+}
+#shop .promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#shop .discounts {
+  display: flex;
+  gap: 32px;
+}
+#shop .navigation {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+#shop .navigation .pages {
+  margin: 0px 28px;
+  display: flex;
+  gap: 8px;
+}
+#shop .navigation img {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+}
+
+.card-layout {
+  box-sizing: border-box;
+  height: 1028px;
+  position: relative;
+  display: flex;
+  gap: 26px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.card-layout::-webkit-scrollbar {
+  display: none;
+}
+
 .product-card {
   box-sizing: border-box;
+  width: 304px;
+  height: 500px;
   padding: 24px;
   background-color: white;
   padding: 24px;
@@ -526,6 +613,12 @@ footer .second-link {
 .product-card .price .cost h5 {
   color: #BD6C2C;
 }
+.product-card .cost {
+  color: #BD6C2C;
+}
+.product-card .cost.old {
+  color: #CBC4B8;
+}
 .product-card.see-all {
   padding: 270px 61px 170px 84px;
 }
@@ -543,7 +636,7 @@ footer .second-link {
   width: auto;
   margin: 74px 64px 72px 64px;
 }
-.content-purchase .titel {
+.content-purchase h1 {
   margin-bottom: 38px;
 }
 
@@ -578,7 +671,7 @@ footer .second-link {
 
 .info-ticket {
   display: grid;
-  grid-template-columns: 68px 268px 336px 44px 178px 28px 28px 28px;
+  grid-template-columns: 68px 268px 336px 44px auto 28px 28px 28px;
   justify-items: start;
   align-items: center;
   padding-bottom: 19px;
@@ -623,7 +716,7 @@ footer .second-link {
 #guided .form {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(3, 416px);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(5, auto);
   -moz-column-gap: 32px;
        column-gap: 32px;

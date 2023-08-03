@@ -1,14 +1,17 @@
-let nav = document.querySelectorAll('header nav');
-const navBurger = nav[1];
+//setting menu-burger
+let navBurger = document.getElementById('burger-menu');
 
 function toggleBurgerMenuVisibility() {
     navBurger.classList.toggle('visible');
 }
 console.log(toggleBurgerMenuVisibility);
 
+//slider
 const cardLayout = [...document.querySelectorAll('.card-layout')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+console.log(cardLayout);
 
 cardLayout.forEach((item, i) => {
     let layoutDimensions = item.getBoundingClientRect();
