@@ -8,33 +8,31 @@ console.log(toggleBurgerMenuVisibility);
 
 //slider
 const cardLayout = [...document.querySelectorAll('.card-layout')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
+const nxtBtn = document.querySelector('.nxt-btn');
+const nxtEndBtn = document.querySelector('.nxt-end-btn');
+const preBtn = document.querySelector('.pre-btn');
+const preEndBtn = document.querySelector('.pre-end-btn');
 
 console.log(cardLayout);
 
-cardLayout.forEach((item, i) => {
+cardLayout.forEach((item) => {
     let layoutDimensions = item.getBoundingClientRect();
     let layoutWidth = layoutDimensions.width;
+    let layoutScrollWidth = item.scrollWidth;
 
-    nxtBtn[i].addEventListener('click', () => {
-        if (window.innerWidth > 851) {
-            item.scrollLeft += layoutWidth / 2;
-        }
-        else {
-            item.scrollLeft += layoutWidth;
-        }
+    nxtBtn.addEventListener('click', () => {
+        item.scrollLeft += layoutWidth + 27;
     });
+    nxtEndBtn.addEventListener('click', () => {
+        item.scrollLeft += layoutScrollWidth;
+    })
 
-    preBtn[i].addEventListener('click', () => {
-        if (window.innerWidth > 851) {
-            item.scrollLeft -= layoutWidth / 2;
-        }
-        else {
-            item.scrollLeft -= layoutWidth;
-        }
+    preBtn.addEventListener('click', () => {
+        item.scrollLeft -= layoutWidth + 27;
     });
-
+    preEndBtn.addEventListener('click', () => {
+        item.scrollLeft -= layoutScrollWidth;
+    })
 })
 
 // cardLayout[0].onmousedown = function(event) {

@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -366,7 +367,7 @@ footer .second-link {
   margin-bottom: 28px;
 }
 .case-homepage.shop .card-layout {
-  height: auto;
+  display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
   margin-bottom: 28px;
@@ -493,15 +494,28 @@ footer .second-link {
 .shop-block .container {
   padding: 72px 64px;
 }
-.shop-block h1 {
-  margin-bottom: 40px;
+.shop-block .back-color {
+  position: absolute;
+  right: 0px;
+  top: 520px;
+  width: 56%;
+  height: 200px;
+  background-color: #E7E0CC;
 }
-.shop-block .title {
+
+#shop {
+  z-index: 0;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 28px;
+}
+#shop .title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 12px;
 }
-.shop-block .title .consumer-basket {
+#shop .title .consumer-basket {
   box-sizing: border-box;
   height: 52px;
   display: flex;
@@ -509,27 +523,13 @@ footer .second-link {
   align-items: center;
   gap: 16px;
 }
-.shop-block .title .consumer-basket span {
+#shop .title .consumer-basket span {
   color: #85817A;
 }
-.shop-block .title .consumer-basket img {
+#shop .title .consumer-basket img {
   padding: 15px 13px 13px 15px;
   width: 24px;
   height: 24px;
-}
-.shop-block .back-color {
-  position: absolute;
-  right: 0px;
-  top: 520px;
-  width: 60%;
-  height: 200px;
-  background-color: #E7E0CC;
-}
-
-#shop {
-  display: flex;
-  flex-direction: column;
-  gap: 56px;
 }
 #shop .filtres {
   display: flex;
@@ -541,16 +541,18 @@ footer .second-link {
   text-align: left;
 }
 #shop .promo {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 28px;
 }
-#shop .discounts {
+#shop .discounts-products {
   display: flex;
   gap: 32px;
 }
 #shop .navigation {
-  align-self: flex-end;
+  justify-self: end;
   display: flex;
   align-items: center;
   height: 40px;
@@ -568,9 +570,9 @@ footer .second-link {
 
 .card-layout {
   box-sizing: border-box;
-  height: 1028px;
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, auto);
   gap: 26px;
   overflow: auto;
   scroll-behavior: smooth;
