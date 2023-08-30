@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 a {
@@ -206,7 +207,7 @@ footer .second-link {
     padding: 8px;
     color: #85817A;
   }
-  navburger-menu {
+  #burger-menu {
     z-index: 90;
     margin-top: 69px;
     padding: 20px 0px 20px 0px;
@@ -222,13 +223,13 @@ footer .second-link {
     border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;
   }
-  navburger-menu.visible {
+  #burger-menu.visible {
     transform: translateX(0);
   }
-  navburger-menu .second-link {
+  #burger-menu .second-link {
     color: #85817A;
   }
-  navburger-menu .divider {
+  #burger-menu .divider {
     width: 40%;
     height: 1px;
     background: #85817A;
@@ -508,6 +509,9 @@ footer .second-link {
   display: grid;
   grid-template-rows: repeat(5, auto);
   gap: 28px;
+}
+#shop section {
+  padding: 0px;
 }
 #shop .title {
   display: flex;
@@ -1020,187 +1024,198 @@ footer .second-link {
     padding-bottom: 0px;
   }
 }
-.section {
+section {
   position: relative;
-  margin: 0px 64px 72px 64px;
+  padding: 72px 64px;
 }
-.section .description {
+section .container {
+  display: flex;
+}
+section .description {
   position: relative;
   align-self: center;
 }
-.section .text-3.inverted {
+section .text-3.inverted {
   position: relative;
   writing-mode: vertical-rl;
   transform: scale(-1);
   color: #85817A;
 }
-.section .heading {
+section .heading {
   position: relative;
   margin-bottom: 28px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.section .poster {
+section .poster {
   position: relative;
 }
-.section.title {
+section.title {
   margin-top: 8px;
   display: flex;
+  padding: 0px 64px;
+}
+section.title .container {
   gap: 32px;
 }
-.section.title h1 {
+section.title h1 {
   margin-bottom: 28px;
 }
-.section.title .ratio {
+section.title .ratio {
   position: absolute;
   top: -8px;
-  left: -64px;
+  right: 351px;
 }
-.section.title img {
+section.title img {
   position: relative;
 }
-.section.about-page-content {
+section.about-page-content {
   display: flex;
   gap: 132px;
-  margin-bottom: 64px;
 }
-.section.about-page-content p {
+section.about-page-content .container {
+  gap: 132px;
+}
+section.about-page-content p {
   position: relative;
   color: #E7E0CC;
 }
-.section.about-page-content span {
+section.about-page-content span {
   color: white;
 }
-.section.about-page-content .background-fill {
-  width: 1441px;
+section.about-page-content .background-fill {
+  width: 100%;
   height: 384px;
   position: absolute;
-  top: -77px;
-  left: -64px;
+  top: -2px;
+  left: 0px;
   background-color: #363533;
 }
-.section.number-1 {
-  margin-top: 3px;
-  padding-top: 69px;
+section.decorative-panels .container {
   display: flex;
   flex-direction: column;
 }
-.section.number-1 .ratio-title {
+section.decorative-panels .ratio-title {
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -71px;
 }
-.section.number-1 .info {
+section.decorative-panels .info {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section.number-1 .info .btn {
+section.decorative-panels .info .btn {
   align-self: flex-end;
   margin-left: 289px;
   margin-bottom: 47px;
 }
-.section.number-1 p {
+section.decorative-panels p {
   max-width: 640px;
 }
-.section.number-2 {
-  margin-bottom: 0px;
-  padding-top: 72px;
+section.parisian-posters {
+  padding-bottom: 0px;
+}
+section.parisian-posters .container {
   display: grid;
   grid-template-columns: 15% auto 32%;
   grid-template-rows: auto auto;
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
-.section.number-2 .heading {
+section.parisian-posters .heading {
   grid-column: span 3;
 }
-.section.number-2 .back-color {
+section.parisian-posters .back-color {
   position: absolute;
   background-color: rgba(231, 224, 204, 0.3);
-  width: 1440px;
+  width: 100%;
   height: 488px;
   top: 0px;
-  left: -64px;
+  left: 0px;
 }
-.section.number-2 .description {
+section.parisian-posters .description {
   display: flex;
   align-self: flex-start;
 }
-.section.number-2 .description.one {
+section.parisian-posters .description.one {
   flex-direction: row;
   gap: 4px;
 }
-.section.number-2 .description.two {
+section.parisian-posters .description.two {
   flex-direction: column;
   gap: 24px;
 }
-.section.number-2 .btn {
+section.parisian-posters .btn {
   position: absolute;
   top: 236px;
   left: 0px;
 }
-.section.number-3 {
+section.documents-decoratifs {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+section.documents-decoratifs .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section.number-3 .info {
+section.documents-decoratifs .info {
   padding-top: 72px;
 }
-.section.number-3 p {
+section.documents-decoratifs p {
   padding-top: 28px;
   max-width: 640px;
 }
-.section.number-3 .btn {
+section.documents-decoratifs .btn {
   align-self: flex-end;
   margin-bottom: 146px;
 }
-.section.number-3 .ratio {
+section.documents-decoratifs .ratio {
   position: absolute;
   bottom: 20px;
   right: 0px;
 }
-.section.number-4 {
+section.czech-posters .container {
   display: grid;
   -moz-column-gap: 32px;
        column-gap: 32px;
   row-gap: 28px;
   grid-template-areas: "title title title" "info info info" "Hyacinth Lottery Moravian" "Hyacinth info-2 Moravian";
 }
-.section.number-4 .title {
+section.czech-posters .container .title {
   grid-area: title;
   margin-bottom: 0px;
 }
-.section.number-4 .info {
+section.czech-posters .container .info {
   padding-left: 112px;
   grid-area: info;
   display: flex;
   flex-direction: row;
   gap: 32px;
 }
-.section.number-4 .info .additional {
+section.czech-posters .container .info .additional {
   max-width: 528px;
 }
-.section.number-4 .hyacinth {
+section.czech-posters .container .hyacinth {
   grid-area: Hyacinth;
   display: flex;
   flex-direction: row;
   position: relative;
 }
-.section.number-4 .lottery {
+section.czech-posters .container .lottery {
   grid-area: Lottery;
   justify-self: center;
   align-self: center;
   position: relative;
 }
-.section.number-4 .moravian {
+section.czech-posters .container .moravian {
   grid-area: Moravian;
   justify-self: end;
   position: relative;
 }
-.section.number-4 .info-2 {
+section.czech-posters .container .info-2 {
   grid-area: info-2;
   position: relative;
   color: #E7E0CC;
@@ -1208,120 +1223,132 @@ footer .second-link {
   flex-direction: column;
   justify-content: flex-end;
 }
-.section.number-4 .background-fill {
-  position: absolute;
-  bottom: -72px;
-  left: -64px;
-  width: 1440px;
-  height: 420px;
-  background-color: #363533;
-}
-.section.number-4 .ratio {
+section.czech-posters .container .ratio {
   position: absolute;
   bottom: -72px;
   right: 218px;
 }
-.section.number-4 .btn {
+section.czech-posters .container .btn {
   margin-top: 35px;
 }
-.section.number-5 {
+section.czech-posters .background-fill {
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 100%;
+  height: 420px;
+  background-color: #363533;
+}
+section.paintings {
+  padding-top: 0px;
+}
+section.paintings .container {
   margin-top: 72px;
   display: flex;
   flex-direction: column;
 }
-.section.number-5 .info {
+section.paintings .info {
   display: flex;
   flex-direction: row;
   gap: 32px;
 }
-.section.number-5 .text {
+section.paintings .text {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.section.number-6 .info {
+section.drawings-pastels {
+  padding-top: 0px;
+}
+section.drawings-pastels .container {
+  display: block;
+}
+section.drawings-pastels .info {
   position: relative;
   display: flex;
   gap: 32px;
 }
-.section.number-6 p {
+section.drawings-pastels p {
   max-width: 528px;
   padding-top: 116px;
 }
-.section.number-6 .btn {
+section.drawings-pastels .btn {
   align-self: flex-end;
   margin-bottom: 202px;
   margin-left: 121px;
 }
-.section.number-6 .background-fill {
+section.drawings-pastels .background-fill {
   position: absolute;
   top: 144px;
-  left: -64px;
-  width: 1440px;
+  left: 0px;
+  width: 100%;
   height: 312px;
   background-color: rgba(231, 224, 204, 0.3);
 }
-.section.number-6 .ratio {
+section.drawings-pastels .ratio {
   position: absolute;
   top: 144px;
   right: 0px;
 }
-.section.number-7 {
+section.studio-photographs {
+  padding-top: 0px;
+}
+section.studio-photographs .container {
   display: grid;
   grid-template-columns: auto 532px;
   -moz-column-gap: 80px;
        column-gap: 80px;
   grid-template-areas: "h h" "a b" "c b";
 }
-.section.number-7 .heading {
+section.studio-photographs .container .heading {
   grid-area: h;
 }
-.section.number-7 p {
+section.studio-photographs .container p {
   grid-area: a;
   max-width: 640px;
 }
-.section.number-7 .poster {
+section.studio-photographs .container .poster {
   position: relative;
   grid-area: b;
   justify-self: end;
 }
-.section.number-7 .btn {
+section.studio-photographs .container .btn {
   grid-area: c;
   position: absolute;
   bottom: 248px;
   left: 530px;
 }
-.section.number-7 .ratio {
+section.studio-photographs .ratio {
   position: absolute;
   top: 88px;
   right: 4px;
 }
 
-.decorative-panels {
+.panels {
   position: relative;
   display: flex;
   margin-top: 60px;
 }
-.decorative-panels.the-four-arts {
+.panels.the-four-arts {
   justify-content: flex-end;
   margin-top: 16px;
 }
-.decorative-panels.the-four-times-of-the-day {
+.panels.the-four-times-of-the-day {
   justify-content: flex-start;
 }
-.decorative-panels.the-four-times-of-the-day .ratio {
+.panels.the-four-times-of-the-day .ratio {
   position: absolute;
   right: 0px;
   bottom: 0px;
 }
-.decorative-panels.the-four-times-of-the-day .btn {
+.panels.the-four-times-of-the-day .btn {
   padding-left: 33px;
   padding-top: 511px;
 }
-.decorative-panels.the-four-flowers {
+.panels.the-four-flowers {
   justify-content: flex-end;
 }
-.decorative-panels.the-four-flowers .btn {
+.panels.the-four-flowers .btn {
   align-self: flex-end;
   margin-right: 50px;
 }

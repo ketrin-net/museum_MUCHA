@@ -12,214 +12,154 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="general-page">
-        <header>
-            <a href="index.html"><span class="text-3">MUCHA</span></a>
-            <nav>
-                <a href="exhibition.html" class="second-link"><span class="text-6">EXHIBITION</span></a>
-                <a href="biography.html" class="second-link"><span class="text-6">BIOGRAPHY</span></a>
-                <a href="#" class="second-link"><span class="text-6">E-SHOP</span></a>
-                <a href="#" class="second-link"><span class="text-6">CONTACTS</span></a>
-            </nav>
-            <div class="language">
-                <span class="text-6">EN</span></a>
-                <img src="./img/icon/down_arrow_header.svg">
-            </div>
+    <header>
+        <a href="index.html"><span class="text-3">MUCHA</span></a>
+        <nav class="text-6 desktop-only">
+            <a href="exhibition.html" class="second-link">EXHIBITION</a>
+            <a href="biography.html" class="second-link">BIOGRAPHY</a>
+            <a href="e-shop.html" class="second-link">E-SHOP</a>
+            <a href="#map" class="second-link">CONTACTS</a>
+        </nav>
+        <nav id="burger-menu" class="text-6 mobile-only">
+            <a href="exhibition.html" class="second-link">EXHIBITION</a>
+            <div class="divider"></div>
+            <a href="biography.html" class="second-link">BIOGRAPHY</a>
+            <div class="divider"></div>
+            <a href="#" class="second-link">E-SHOP</a>
+            <div class="divider"></div>
+            <a href="#" class="second-link">CONTACTS</a>
+            <div class="divider"></div>
             <div class="btn buy">
                 <a href="tickets.html">
                     <img src="./img/ellipse/Ellipse_for_buy_tickets.svg">
                     <span class="text-5">BUY TICKETS</span>
                 </a>
             </div>
-        </header>
-        <div class="divider"></div>
-        <div class="section title">
-            <img src="./img/ratio/ratio_exhibition_title.svg" class="ratio">
-            <img src="./img/exhi_title.png">
-            <div class="description">
-                <h1>EXHIBITION</h1>
-                <p>
-                    The Mucha Museum - the only museum in the world dedicated to the life and work of the world-acclaimed Czech ART NOUVEAU
-                    artist Alphonse Mucha (1860 - 1939), was opened in Prague to the general public on 13 February 1998.
-                    <br><br>
-                    The exhibition is completed by an interesting documentary on the life and work on Alphonse Mucha.
-                    <br><br>
-                    A number of items, previously part of the Mucha family home in Prague, are now on exhibit.
-                </p>
-            </div>
+        </nav>
+        <div class="language desktop-only"">
+                    <span class=" text-6">EN</span></a>
+            <img src="./img/icon/down_arrow_header.svg">
         </div>
-        <div class="section about-page-content">
+        <div class="btn buy desktop-only">
+            <a href="tickets.html">
+                <img src="./img/ellipse/Ellipse_for_buy_tickets.svg">
+                <span class="text-5">BUY TICKETS</span>
+            </a>
+        </div>
+        <button class="menu-btn mobile-only" onclick="toggleBurgerMenuVisibility()"><img
+                src="./img/icon/menu_header_mobile.svg"></button>
+    </header>
+    <div class="main">
+        <section class="title">
+            <img src="./img/ratio/ratio_exhibition_title.svg" class="ratio">
+            <div class="container">
+                <img src="./img/exhi_title.png">
+                <div class="description">
+                    <h1>EXHIBITION</h1>
+                    <p>
+                        The Mucha Museum - the only museum in the world dedicated to the life and work of the world-acclaimed Czech ART
+                        NOUVEAU
+                        artist Alphonse Mucha (1860 - 1939), was opened in Prague to the general public on 13 February 1998.
+                        <br><br>
+                        The exhibition is completed by an interesting documentary on the life and work on Alphonse Mucha.
+                        <br><br>
+                        A number of items, previously part of the Mucha family home in Prague, are now on exhibit.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="about-page-content">
             <div class="background-fill"></div>
-            <div class="description">
-                <div class="heading">
-                    <span class="text-3">The museum is divided into <br> <span style="color:#D3B771">seven</span> sections exhibiting:</span>
+            <div class="container">
+                <div class="description">
+                    <div class="heading">
+                        <span class="text-3">The museum is divided into <br> <span style="color:#D3B771">seven</span> sections
+                            exhibiting:</span>
+                    </div>
+                    <p class="text-6">
+                        Decorative Panels; The Parisian Posters; Documents Décoratifs; <br>
+                        The Czech Posters; Oil Paintings; Drawings and Pastels, <br>
+                        Photographs and personal memorabilia of the artist.
+                    </p>
                 </div>
                 <p class="text-6">
-                    Decorative Panels; The Parisian Posters; Documents Décoratifs; <br>
-                     The Czech Posters; Oil Paintings; Drawings and Pastels, <br>
-                    Photographs and personal memorabilia of the artist.
+                    The exhibition is completed by an interesting documentary on the life and <br> work on Alphonse Mucha.
+                    <br> <br>
+                    A number of items, previously part of the Mucha family home in Prague, <br> are now on exhibit.
                 </p>
             </div>
-            <p class="text-6">
-                The exhibition is completed by an interesting documentary on the life and <br> work on Alphonse Mucha.
-                <br> <br>
-                A number of items, previously part of the Mucha family home in Prague, <br> are now on exhibit.
-            </p>
-        </div>
-        <div class="section number-1">
-            <img src="./img/ratio/ratio_exhibition_section1.svg" class="ratio-title">
-            <div class="heading">
-                <span class="text-4">SECTION 1. DECORATIVE PANELS</span>
-            </div>
-            <div class="info">
-                <div class="btn read">
-                    <a href="#">
-                        <span class="text-5">Read more</span>
-                        <img src="./img/ellipse/ellipse_with_line.svg">
-                    </a>
-                </div>
-                <p class="text-6">Alphonse Mucha was a leading exponent of the Art-Nouveau style, <br>which demanded the creation of a decorative scheme that
-                    would allow for the repetition of stylistic patterns. Mucha based his work on an image that lent itself to an
-                    arrangement in cycles based on traditional themes, usually drawn from the physical world. For this reason, Mucha gave
-                    his first set of decorative panels, made in 1896, the title The Four Seasons.
-                </p>
-            </div>
-            <div class="decorative-panels the-four-arts">
-                <span class="text-3 inverted">The Four Arts cycle</span>
-                <img src="./img/The-four-arts_1.png">
-                <img src="./img/The-four-arts_2.png">
-                <img src="./img/The-four-arts_3.png">
-                <img src="./img/The-four-arts_4.png">
-            </div>
-            <div class="decorative-panels the-four-times-of-the-day">
-                <img src="./img/the-four-times-of-the-day_1.png">
-                <img src="./img/the-four-times-of-the-day_2.png">
-                <img src="./img/the-four-times-of-the-day_3.png">
-                <img src="./img/the-four-times-of-the-day_4.png">
-                <span class="text-3 inverted">The Four Times of the Day</span>
-                <img src="./img/ratio/ratio_exhibition_Four-Times_Day.svg" class="ratio">
-                <div class="btn read">
-                    <a href="#">
-                        <span class="text-5">Read more</span>
-                        <img src="./img/ellipse/ellipse_with_line.svg">
-                    </a>
-                </div>
-            </div>
-            <div class="decorative-panels the-four-flowers">
-                <div class="btn read">
-                    <a href="#">
-                        <span class="text-5">Read more</span>
-                        <img src="./img/ellipse/ellipse_with_line.svg">
-                    </a>
-                </div>
-                <span class="text-3 inverted">The Four Flowers cycle</span>
-                <img src="./img/the-four-flowers_2.png">
-                <img src="./img/the-four-flowers_2.png">
-                <img src="./img/the-four-flowers_3.png">
-                <img src="./img/the-four-flowers_4.png">
-            </div>
-        </div>
-        <div class="section number-2">
-            <div class="back-color"></div>
-            <div class="heading">
-                <span class="text-4">SECTION 2. PARISIAN POSTERS</span>
-            </div>
-            <img src="./img/poster_exhibition_section2.png" class="poster">
-            <div class="description one">
-                <span class="text-3 inverted">Gismonda</span>
-                <p class="text-6">Posters made in Paris in the 1890s form the best-known and world famous segment of Mucha’s work. It was through them
-                that he managed to promote his own version of the new decorative style. The primary group consists of posters for Sarah
-                Bernhardt, who was a famous Parisian actress.
-                </p>
-                <div class="btn read">
-                    <a href="#">
-                        <span class="text-5">Read more</span>
-                        <img src="./img/ellipse/ellipse_with_line.svg">
-                    </a>
-                </div>
-            </div>
-            <div class="description two">
-                <p class="text-5">Gismonda, proof print</p>
-                <p class="text-6">The two original proof prints for Gismonda are quite interesting. Mucha’s poster was too long for the common size of the
-                printer’s stone and so it was assumed that it had been printed on two stones. Proof print however proves that it was
-                printed using a single stone.
-                </p>
-            </div>
-        </div>
-        <div class="section number-3">
-            <img src="./img/ratio/ratio_exhibition_section3.svg" class="ratio">
-            <div class="info">
+        </section>
+        <section class="decorative-panels">
+            <div class="container">
+                <img src="./img/ratio/ratio_exhibition_section1.svg" class="ratio-title">
                 <div class="heading">
-                    <span class="text-4">SECTION 3. DOCUMENTS DÉCORATIFS</span>
+                    <span class="text-4">SECTION 1. DECORATIVE PANELS</span>
                 </div>
-                <p class="text-6">In 1902, Mucha published a collection of 72 plates with patterns, drawn in pencil and brightened with white paint, for
-                stylistic work in arts and crafts, titled Documents Décoratifs. This portfolio includes various ornamental and
-                naturalistic floral motifs, studies of women’s heads, and nudes, combining illusive naturalism with abstract ornamental
-                framing. Jewellery, furniture, tableware and many other items related to domestic life at the time suggest that Mucha
-                strove for a summary of his extensive experience in decoration, which, especially considering his work for the Paris
-                World’s Fair of 1900 and the interior design for the Fouquet Jewellery Shop, left a two-dimensional plane expanding into
-                three-dimensional space.
-                </p>
-            </div>
-            <div class="btn read">
-                <a href="#">
-                    <span class="text-5">Read more</span>
-                    <img src="./img/ellipse/ellipse_with_line.svg">
-                </a>
-            </div>
-            <img src="./img/poster_exhibition_section3.png"  class="poster">
-        </div>
-        <div class="section number-4">
-            <div class="background-fill"></div>
-            <img src="./img/ratio/ratio_exhibition_section4.svg" class="ratio">
-            <div class="heading title">
-                <span class="text-4">SECTION 4. CZECH POSTERS</span>
-            </div>
-            <div class="info">
-                <p class="text-6 main">After his permanent relocation back to his homeland in 1910, Alphonse Mucha returned to his long-held desire to
-                systematically and single-mindedly, through his art, address his fellow people and express their needs and ideals.
-                Gradually a new set of posters emerged, quite distinct in design from the Parisian ones.
-                </p>
-                <p class="text-6 additional">There were two prevalent themes: a new approach to folklore, emphasizing the colourful beauty of Moravian costumes and
-                the gentle type of young Slav women (Moravian Teachers’ Choir, 1911), and the theme of the sports events and festivals
-                of the Sokol organization, which had been a symbol of Czech national self-determination since the 19th century.
-                </p>
-            </div>
-            <div class="hyacinth">
-                <span class="text-3 inverted">Princess Hyacinth</span>
-                <img src="./img/poster_exhibition_section4_hyacinta.png">
-            </div>
-            <div class="lottery">
-                <span class="text-3 inverted">Lottery</span>
-                <img src="./img/poster_exhibition_section4_lottery.png">
-            </div>
-            <div class="moravian">
-                <span class="text-3 inverted">Moravian Teacher's Choir</span>
-                <img src="./img/poster_exhibition_section4_moravian.png">
-            </div>
-            <div class="info-2">
-                <p class="text-6">In addition to these, there are also posters that strongly denounce the oppression of the Slavs (Lottery of the Union of
-                Southwestern Moravia, 1912) and lyrical recollections of Parisian motifs (Princess Hyacinth, 1911). In these works,
-                ornaments are subordinated to the melody of the line.
-                </p>
-                <div class="btn read">
-                    <a href="#">
-                        <span class="text-5">Read more</span>
-                        <img src="./img/ellipse/ellipse_with_line.svg">
-                    </a>
+                <div class="info">
+                    <div class="btn read">
+                        <a href="#">
+                            <span class="text-5">Read more</span>
+                            <img src="./img/ellipse/ellipse_with_line.svg">
+                        </a>
+                    </div>
+                    <p class="text-6">Alphonse Mucha was a leading exponent of the Art-Nouveau style, <br>which demanded the creation of
+                        a decorative scheme that
+                        would allow for the repetition of stylistic patterns. Mucha based his work on an image that lent itself to an
+                        arrangement in cycles based on traditional themes, usually drawn from the physical world. For this reason, Mucha
+                        gave
+                        his first set of decorative panels, made in 1896, the title The Four Seasons.
+                    </p>
+                </div>
+                <div class="panels the-four-arts">
+                    <span class="text-3 inverted">The Four Arts cycle</span>
+                    <img src="./img/The-four-arts_1.png">
+                    <img src="./img/The-four-arts_2.png">
+                    <img src="./img/The-four-arts_3.png">
+                    <img src="./img/The-four-arts_4.png">
+                </div>
+                <div class="panels the-four-times-of-the-day">
+                    <img src="./img/the-four-times-of-the-day_1.png">
+                    <img src="./img/the-four-times-of-the-day_2.png">
+                    <img src="./img/the-four-times-of-the-day_3.png">
+                    <img src="./img/the-four-times-of-the-day_4.png">
+                    <span class="text-3 inverted">The Four Times of the Day</span>
+                    <img src="./img/ratio/ratio_exhibition_Four-Times_Day.svg" class="ratio">
+                    <div class="btn read">
+                        <a href="#">
+                            <span class="text-5">Read more</span>
+                            <img src="./img/ellipse/ellipse_with_line.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="panels the-four-flowers">
+                    <div class="btn read">
+                        <a href="#">
+                            <span class="text-5">Read more</span>
+                            <img src="./img/ellipse/ellipse_with_line.svg">
+                        </a>
+                    </div>
+                    <span class="text-3 inverted">The Four Flowers cycle</span>
+                    <img src="./img/the-four-flowers_2.png">
+                    <img src="./img/the-four-flowers_2.png">
+                    <img src="./img/the-four-flowers_3.png">
+                    <img src="./img/the-four-flowers_4.png">
                 </div>
             </div>
-        </div>
-        <div class="section number-5">
-            <div class="heading">
-                <span class="text-4">SECTION 5. PAINTINGS</span>
-            </div>
-            <div class="info">
-                <div class="text">
-                    <p class="text-6">
-                        Alphonse Mucha is primarily known as a draughtsman and graphic artist, however, the training he received at the Academy
-                        of Art in Munich also included painting. In the 1890s, Mucha engaged primarily in commissions in the field of graphic
-                        art and his paintings include mostly portraits and uncommissioned portrait studies.
+        </section>
+        <section class="parisian-posters">
+            <div class="back-color"></div>
+            <div class="container">
+                <div class="heading">
+                    <span class="text-4">SECTION 2. PARISIAN POSTERS</span>
+                </div>
+                <img src="./img/poster_exhibition_section2.png" class="poster">
+                <div class="description one">
+                    <span class="text-3 inverted">Gismonda</span>
+                    <p class="text-6">Posters made in Paris in the 1890s form the best-known and world famous segment of Mucha’s work.
+                        It was through them
+                        that he managed to promote his own version of the new decorative style. The primary group consists of posters
+                        for Sarah
+                        Bernhardt, who was a famous Parisian actress.
                     </p>
                     <div class="btn read">
                         <a href="#">
@@ -228,22 +168,163 @@
                         </a>
                     </div>
                 </div>
-                <img src="./img/poster_exhibition_section5.png">
+                <div class="description two">
+                    <p class="text-5">Gismonda, proof print</p>
+                    <p class="text-6">The two original proof prints for Gismonda are quite interesting. Mucha’s poster was too long for
+                        the common size of the
+                        printer’s stone and so it was assumed that it had been printed on two stones. Proof print however proves that it
+                        was
+                        printed using a single stone.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="section number-6">
+        </section>
+        <section class="documents-decoratifs">
+            <div class="container">
+                <img src="./img/ratio/ratio_exhibition_section3.svg" class="ratio">
+                <div class="info">
+                    <div class="heading">
+                        <span class="text-4">SECTION 3. DOCUMENTS DÉCORATIFS</span>
+                    </div>
+                    <p class="text-6">In 1902, Mucha published a collection of 72 plates with patterns, drawn in pencil and brightened
+                        with white paint, for
+                        stylistic work in arts and crafts, titled Documents Décoratifs. This portfolio includes various ornamental and
+                        naturalistic floral motifs, studies of women’s heads, and nudes, combining illusive naturalism with abstract
+                        ornamental
+                        framing. Jewellery, furniture, tableware and many other items related to domestic life at the time suggest that
+                        Mucha
+                        strove for a summary of his extensive experience in decoration, which, especially considering his work for the
+                        Paris
+                        World’s Fair of 1900 and the interior design for the Fouquet Jewellery Shop, left a two-dimensional plane
+                        expanding into
+                        three-dimensional space.
+                    </p>
+                </div>
+                <div class="btn read">
+                    <a href="#">
+                        <span class="text-5">Read more</span>
+                        <img src="./img/ellipse/ellipse_with_line.svg">
+                    </a>
+                </div>
+                <img src="./img/poster_exhibition_section3.png" class="poster">
+            </div>
+        </section>
+
+        <section class="czech-posters">
             <div class="background-fill"></div>
-            <img src="./img/ratio/ratio_exhibition_section6.svg" class="ratio">
-            <div class="heading">
-                <span class="text-4">SECTION 6. DRAWINGS AND PASTELS</span>
+            <div class="container">
+                <img src="./img/ratio/ratio_exhibition_section4.svg" class="ratio">
+                <div class="heading title">
+                    <span class="text-4">SECTION 4. CZECH POSTERS</span>
+                </div>
+                <div class="info">
+                    <p class="text-6 main">After his permanent relocation back to his homeland in 1910, Alphonse Mucha returned to his
+                        long-held desire to
+                        systematically and single-mindedly, through his art, address his fellow people and express their needs and
+                        ideals.
+                        Gradually a new set of posters emerged, quite distinct in design from the Parisian ones.
+                    </p>
+                    <p class="text-6 additional">There were two prevalent themes: a new approach to folklore, emphasizing the colourful
+                        beauty of Moravian costumes and
+                        the gentle type of young Slav women (Moravian Teachers’ Choir, 1911), and the theme of the sports events and
+                        festivals
+                        of the Sokol organization, which had been a symbol of Czech national self-determination since the 19th century.
+                    </p>
+                </div>
+                <div class="hyacinth">
+                    <span class="text-3 inverted">Princess Hyacinth</span>
+                    <img src="./img/poster_exhibition_section4_hyacinta.png">
+                </div>
+                <div class="lottery">
+                    <span class="text-3 inverted">Lottery</span>
+                    <img src="./img/poster_exhibition_section4_lottery.png">
+                </div>
+                <div class="moravian">
+                    <span class="text-3 inverted">Moravian Teacher's Choir</span>
+                    <img src="./img/poster_exhibition_section4_moravian.png">
+                </div>
+                <div class="info-2">
+                    <p class="text-6">In addition to these, there are also posters that strongly denounce the oppression of the Slavs
+                        (Lottery of the Union of
+                        Southwestern Moravia, 1912) and lyrical recollections of Parisian motifs (Princess Hyacinth, 1911). In these
+                        works,
+                        ornaments are subordinated to the melody of the line.
+                    </p>
+                    <div class="btn read">
+                        <a href="#">
+                            <span class="text-5">Read more</span>
+                            <img src="./img/ellipse/ellipse_with_line.svg">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="info">
-                <img src="./img/poster_exhibition_section6.png">
+        </section>
+
+        <section class="paintings">
+            <div class="container">
+                <div class="heading">
+                    <span class="text-4">SECTION 5. PAINTINGS</span>
+                </div>
+                <div class="info">
+                    <div class="text">
+                        <p class="text-6">
+                            Alphonse Mucha is primarily known as a draughtsman and graphic artist, however, the training he received at
+                            the Academy
+                            of Art in Munich also included painting. In the 1890s, Mucha engaged primarily in commissions in the field
+                            of graphic
+                            art and his paintings include mostly portraits and uncommissioned portrait studies.
+                        </p>
+                        <div class="btn read">
+                            <a href="#">
+                                <span class="text-5">Read more</span>
+                                <img src="./img/ellipse/ellipse_with_line.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./img/poster_exhibition_section5.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="drawings-pastels">
+            <div class="background-fill"></div>
+            <div class="container">
+                <img src="./img/ratio/ratio_exhibition_section6.svg" class="ratio">
+                <div class="heading">
+                    <span class="text-4">SECTION 6. DRAWINGS AND PASTELS</span>
+                </div>
+                <div class="info">
+                    <img src="./img/poster_exhibition_section6.png">
+                    <p class="text-6">
+                        The presented set of drawings attempts to, at least briefly, reveal the remarkable creative background Mucha’s
+                        work had
+                        in drawing. This applies not only to the precise pencil drawings made as studies, but mainly the sketches which
+                        frequently exhibited an unusually expressive facture (Design for a window, ca 1900).
+                    </p>
+                    <div class="btn read">
+                        <a href="#">
+                            <span class="text-5">Read more</span>
+                            <img src="./img/ellipse/ellipse_with_line.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="studio-photographs">
+            <div class="container">
+                <img src="./img/ratio/ratio_exhibition_section7.svg" class="ratio">
+                <div class="heading">
+                    <span class="text-4">SECTION 7. STUDIO AND PHOTOGRAPHS</span>
+                </div>
                 <p class="text-6">
-                    The presented set of drawings attempts to, at least briefly, reveal the remarkable creative background Mucha’s work had
-                    in drawing. This applies not only to the precise pencil drawings made as studies, but mainly the sketches which
-                    frequently exhibited an unusually expressive facture (Design for a window, ca 1900).
+                    In the second half of the 1890s, Mucha made a remarkable set of photographs of female models in his studio in Rue du
+                    Val-de-Grâce in Paris. They by far surpass the standard contemporary use of photography as a cheap medium for
+                    preliminary studies as they capture the unique atmosphere of the entire studio, an artistic world in its own right.
                 </p>
+                <div class="poster">
+                    <span class="text-3 inverted">Le Pater</span>
+                    <img src="./img/poster_exhibition_section7.png">
+                </div>
                 <div class="btn read">
                     <a href="#">
                         <span class="text-5">Read more</span>
@@ -251,66 +332,43 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="section number-7">
-            <img src="./img/ratio/ratio_exhibition_section7.svg" class="ratio">
-            <div class="heading">
-                <span class="text-4">SECTION 7. STUDIO AND PHOTOGRAPHS</span>
-            </div>
-            <p class="text-6">
-                In the second half of the 1890s, Mucha made a remarkable set of photographs of female models in his studio in Rue du
-                Val-de-Grâce in Paris. They by far surpass the standard contemporary use of photography as a cheap medium for
-                preliminary studies as they capture the unique atmosphere of the entire studio, an artistic world in its own right.
-            </p>
-            <div class="poster">
-                <span class="text-3 inverted">Le Pater</span>
-                <img src="./img/poster_exhibition_section7.png">
-            </div>
-            <div class="btn read">
-                <a href="#">
-                    <span class="text-5">Read more</span>
-                    <img src="./img/ellipse/ellipse_with_line.svg">
-                </a>
-            </div>
-        </div>
-
+        </section>
         <div id="map">
-            <div class="divider"></div>
-            <div class="map-info">
-                <img src="./img/icon/icon_map.svg" class="map-icon">
-                <img src="./img/Map.png" width="928" height="480">
-            </div>
+            <img src="./img/Map.svg" class="map-poster desktop-only">
+            <img src="./img/Map_for_mobile.svg" class="map-poster mobile-only">
             <div id="contact">
-                <img src="./img/ratio/golden_ratio_for_map.svg">
+                <img src="./img/ratio/golden_ratio_for_map.svg" class="ratio desktop-only">
+                <img src="./img/ratio/golden_ratio_for_map-mobile.svg" class="ratio mobile-only">
+                <div class="cont-info">
+                    <span class="text-3">Mucha Museum Kaunický <br class="desktop-only"> palác</span>
+                    <span class="text-4">Panská 7 <br> 110 00 Prague 1</span>
+                    <span class="text-6">Opening hours:</span>
+                    <span class="text-5">daily 10:00 am - 6:00 pm</span>
+                </div>
                 <div class="btn buy">
                     <a href="tickets.html">
                         <img src="./img/ellipse/Ellipse_for_buy_tickets.svg">
                         <span class="text-5">BUY TICKETS</span>
                     </a>
                 </div>
-                <div class="cont-info">
-                    <span class="text-3">Mucha Museum Kaunický <br> palác</span>
-                    <span class="text-4">Panská 7 <br> 110 00 Prague 1</span>
-                    <span class="text-6">Opening hours:</span>
-                    <span class="text-5">daily 10:00 am - 6:00 pm</span>
-                </div>
             </div>
         </div>
-        <footer>
-            <a href="index.html"><span class="text-3">MUCHA</span></a>
-            <nav>
-                <a href="exhibition.html" class="second-link"><span class="text-6">EXHIBITION</span></a>
-                <a href="biography.html" class="second-link"><span class="text-6">BIOGRAPHY</span></a>
-                <a href="#" class="second-link"><span class="text-6">E-SHOP</span></a>
-                <a href="#" class="second-link"><span class="text-6">CONTACTS</span></a>
-            </nav>
-            <div class="btn buy">
-                <a href="tickets.html">
-                    <img src="./img/ellipse/Ellipse_for_buy_tickets.svg">
-                    <span class="text-5">BUY TICKETS</span>
-                </a>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <a href="index.html"><span class="text-3">MUCHA</span></a>
+        <nav class="footer">
+            <a href="exhibition.html" class="second-link"><span class="text-6">EXHIBITION</span></a>
+            <a href="biography.html" class="second-link"><span class="text-6">BIOGRAPHY</span></a>
+            <a href="/e-shop.html" class="second-link"><span class="text-6">E-SHOP</span></a>
+            <a href="#map" class="second-link"><span class="text-6">CONTACTS</span></a>
+        </nav>
+        <div class="btn buy">
+            <a href="tickets.html">
+                <img src="./img/ellipse/Ellipse_for_buy_tickets.svg">
+                <span class="text-5">BUY TICKETS</span>
+            </a>
+        </div>
+    </footer>
+    <script src="./js/general.js"></script>
 </body>
 </html>

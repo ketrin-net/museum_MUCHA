@@ -23,6 +23,10 @@
     grid-template-rows: repeat(5, auto);
     gap: 28px;
 
+    section {
+        padding: 0px;
+    }
+
     .title {
         display: flex;
         flex-direction: row;
